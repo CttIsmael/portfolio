@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ismael Oliveira | Head de Design &amp; Diretor de Arte</title>
-<meta name="description" content="Ismael Oliveira, Head de Design e Diretor de Arte em Teresina (PI). Direção de arte, gamificação, CRM, UX/UI, motion design e automação com IA para marcas digitais e iGaming.">
+<meta name="description" content="Ismael Oliveira, Head de Design e Diretor de Arte em Teresina (PI). Direção de arte, gamificação, CRM, UX/UI, motion design e automação com IA para marcas de iGaming no Brasil e na América Latina.">
 <meta name="author" content="Ismael Oliveira">
 <meta name="theme-color" content="#050A16">
 <meta name="robots" content="index, follow">
@@ -24,12 +24,12 @@
  "address":{"@type":"PostalAddress","addressLocality":"Teresina","addressRegion":"PI","addressCountry":"BR"},
  "email":"mailto:ismaeloliveirarego@gmail.com",
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"UESPI"},{"@type":"CollegeOrUniversity","name":"Anhanguera"},{"@type":"EducationalOrganization","name":"IFPI"}],
- "knowsAbout":["Direção de Arte","Design Gráfico","Gamificação","CRM","UX/UI","Motion Design","Automação com IA","iGaming","Figma","After Effects"],
+ "knowsAbout":["Mercado LATAM","Comunicação em espanhol","Direção de Arte","Design Gráfico","Gamificação","CRM","UX/UI","Motion Design","Automação com IA","iGaming","Figma","After Effects"],
  "sameAs":["https://linkedin.com/in/cttismael","https://behance.net/cttismael","https://github.com/CttIsmael"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F2F5FB; --surface:#FFFFFF; --surface-2:#E7EDF8; --line:#D3DCEC;
@@ -37,7 +37,7 @@
   --on-accent:#FFFFFF; --glow:rgba(29,94,240,.16); --header-bg:rgba(242,245,251,.86);
   --strand-a:#1D5EF0; --strand-b:#7FB4FF; --strand-mode:source-over;
   --font-display:"Manrope","Segoe UI",system-ui,sans-serif;
-  --font-body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+  --font-body:"Manrope","Segoe UI",system-ui,sans-serif;
   --font-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
   --radius-lg:28px; --radius-md:16px; --radius-pill:999px;
   --wrap:1200px;
@@ -65,9 +65,11 @@
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--header-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 img{max-width:100%;display:block}
+h1,h2,h3,h4{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;border-radius:6px}
 .wrap{width:min(var(--wrap),100% - 48px);margin-inline:auto}
@@ -108,14 +110,14 @@ a{color:inherit}
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:calc(100svh - 72px);display:flex;align-items:center;overflow:hidden;isolation:isolate}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 70% at 78% 60%,var(--glow),transparent 70%)}
-.hero-inner{padding:72px 0 140px;max-width:600px}
+.hero-inner{padding:72px 0 140px;max-width:660px}
 .tag{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:var(--radius-pill);padding:10px 20px;background:color-mix(in srgb,var(--surface) 60%,transparent);backdrop-filter:blur(6px)}
 .tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 12px var(--accent-2)}
-.hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(40px,5vw,68px);line-height:1.02;letter-spacing:-.035em;margin:28px 0 24px}
+.hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(38px,4vw,58px);line-height:1.05;letter-spacing:-.035em;margin:28px 0 24px}
 .hero h1 .hl{background:linear-gradient(100deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:clamp(17px,1.5vw,19px);color:var(--muted);max-width:560px;margin:0 0 40px}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
-.motion{position:absolute;top:50%;right:max(24px,calc((100vw - var(--wrap))/2));transform:translateY(-52%);width:min(43vw,560px);z-index:1}
+.motion{position:absolute;top:50%;right:max(24px,calc((100vw - var(--wrap))/2));transform:translateY(-52%);width:min(40vw,520px);z-index:1}
 .motion svg.graph{width:100%;height:auto;display:block;overflow:visible;cursor:ew-resize;touch-action:pan-y}
 .motion svg.graph .g-panel{transition:stroke .25s}
 .motion svg.graph:hover .g-panel,.motion svg.graph.active .g-panel{stroke:var(--accent-2)}
@@ -145,7 +147,8 @@ a{color:inherit}
 .scroll-hint{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);width:48px;height:48px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);text-decoration:none;background:var(--bg)}
 .scroll-hint svg{width:18px;height:18px}
 .hero-curve{position:absolute;left:0;right:0;bottom:0;height:120px;z-index:-1;pointer-events:none}
-@media (max-width:1180px){.motion{width:min(40vw,480px)}}
+@media (max-width:1180px) and (min-width:861px){.motion{width:min(40vw,480px)}.hero-inner{max-width:calc(100vw - min(40vw,480px) - 120px)}}
+@media (max-width:860px){.scroll-hint{display:none}.motion .g-label,.motion .g-hint,.motion .g-readout,.motion .g-ph-text{display:none}}
 @media (max-width:860px){
   .hero{min-height:auto}
   .hero-inner{padding:72px 0 120px}
@@ -167,28 +170,53 @@ h2.title{font-family:var(--font-display);font-weight:800;font-size:clamp(34px,4.
 .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,color-mix(in srgb,var(--accent) 45%,transparent));mix-blend-mode:multiply;pointer-events:none}
 .portrait figcaption{position:absolute;left:16px;bottom:16px;right:16px;display:flex;justify-content:space-between;color:#fff;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;z-index:1;text-shadow:0 1px 8px rgba(0,0,0,.5)}
 .about-intro{color:var(--muted);font-size:19px;max-width:58ch;margin:0 0 28px}
-.stats{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 48px;margin:0;padding:24px 0 0;border-top:1px solid var(--line)}
-.stats div{margin:0}
-.stats dt{font-family:var(--font-display);font-weight:800;font-size:clamp(28px,2.8vw,40px);line-height:1;letter-spacing:-.03em;color:var(--text);white-space:nowrap}
-.stats dt .arrow{color:var(--accent-2)}
-.stats dd{margin:8px 0 0;color:var(--muted);font-size:14px;max-width:22ch}
-@media (max-width:1180px){.stats{grid-template-columns:1fr 1fr;gap:20px 28px}.stats div:nth-child(3){grid-column:span 2}.stats dd{max-width:none}}
+.stats{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 40px;margin:80px 0 0;padding:36px 0 0;border-top:1px solid var(--line)}
+.stats li{display:flex;flex-direction:column;gap:10px}
+.stats .kick{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stats .kick.hl{color:var(--accent-2)}
+.stats strong{font-family:var(--font-display);font-weight:800;font-size:clamp(34px,3.6vw,52px);line-height:1;letter-spacing:-.035em}
+.stats span.lbl{color:var(--muted);font-size:15px;line-height:1.5;max-width:30ch}
+@media (max-width:860px){.stats{grid-template-columns:1fr 1fr;gap:32px 24px;margin-top:56px}}
 .skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
 .skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
 .contact-ctas{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
-.journey{margin-top:110px;display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:72px}
+.journey{margin-top:96px;display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:72px}
 .journey-head{position:sticky;top:120px;align-self:start}
 .journey-head h3{font-family:var(--font-display);font-size:32px;line-height:1.1;letter-spacing:-.02em;margin:0 0 14px}
 .journey-head p{color:var(--muted);margin:0}
-.steps{list-style:none;margin:0;padding:0;position:relative}
-.steps::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--accent-2),var(--line))}
-.step{position:relative;padding:0 0 48px 48px}
+.quest{margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.quest-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted);margin-bottom:12px}
+.quest-top b{color:var(--text);font-weight:500}
+.quest-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:22px}
+.quest-bar i{height:6px;border-radius:3px;background:var(--line);transition:background .4s}
+.quest-bar i.on{background:var(--accent-2)}
+.quest-ctas{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.btn-sm{height:46px;padding:0 22px;font-size:15px}
+.btn-sm svg{width:17px;height:17px}
+.steps{list-style:none;margin:0;padding:0;position:relative;--prog:0px}
+.steps::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:1px;background:var(--line)}
+.steps::after{content:"";position:absolute;left:7px;top:10px;width:1px;height:var(--prog);background:var(--accent-2);transition:height .5s ease}
+.step{position:relative;padding:0 0 44px 48px}
 .step:last-child{padding-bottom:0}
-.step::before{content:"";position:absolute;left:0;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--accent-2)}
-.step:last-child::before{background:var(--accent-2);box-shadow:0 0 0 6px var(--glow)}
+.step::before{content:"";position:absolute;left:0;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:2px solid var(--accent-2);z-index:1}
+.step.current::before{background:var(--accent-2);box-shadow:0 0 0 6px var(--glow)}
+.step.locked::before{border:2px dashed var(--line)}
+.step.next::before{border-color:var(--accent-2);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--glow)}50%{box-shadow:0 0 0 8px var(--glow)}}
+.step.locked,.step.next{padding-bottom:30px}
 .step .when{color:var(--accent-2);margin-bottom:6px}
+.step.locked .when,.step.next .when{color:var(--muted)}
 .step h4{font-family:var(--font-display);font-size:24px;line-height:1.2;letter-spacing:-.015em;margin:0 0 10px}
 .step p{margin:0;color:var(--muted);max-width:62ch}
+.step.just .step-body{animation:unlockIn .6s ease both}
+@keyframes unlockIn{from{opacity:0;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.locked-row{display:flex;gap:10px;align-items:center;color:var(--muted);opacity:.55;font-family:var(--font-mono);font-size:13px;letter-spacing:.04em}
+.locked-row svg{width:16px;height:16px}
+.unlock{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border:1px dashed var(--accent-2);border-radius:14px;color:var(--text);font:600 15px var(--font-body);background:color-mix(in srgb,var(--accent-2) 8%,transparent);transition:background .2s,transform .2s}
+.unlock:hover{background:color-mix(in srgb,var(--accent-2) 16%,transparent);transform:translateY(-2px)}
+.unlock:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
+.unlock svg{width:18px;height:18px;color:var(--accent-2)}
+@media (prefers-reduced-motion:reduce){.steps::after{transition:none}.step.next::before{animation:none}.step.just .step-body{animation:none}}
 @media (max-width:960px){
   .about-top,.journey{grid-template-columns:1fr;gap:48px}
   .portrait{max-width:380px}
@@ -197,15 +225,31 @@ h2.title{font-family:var(--font-display);font-weight:800;font-size:clamp(34px,4.
 
 /* ---------- services ---------- */
 .services-head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap;margin-bottom:56px}
-.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.svc{display:grid;grid-template-columns:minmax(220px,1fr) 1.4fr minmax(200px,.9fr);gap:40px;padding:36px 0;border-bottom:1px solid var(--line);align-items:start;transition:background .25s}
-.svc h3{font-family:var(--font-display);font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0;display:flex;gap:14px;align-items:center}
-.svc h3 svg{width:28px;height:28px;flex:none;color:var(--accent-2)}
-.svc p{margin:0;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:1px solid var(--line);border-radius:var(--radius-pill);padding:6px 14px;font-family:var(--font-mono);font-size:12px;color:var(--muted)}
-.svc:hover h3{color:var(--accent-2)}
-@media (max-width:900px){.svc{grid-template-columns:1fr;gap:14px;padding:28px 0}}
+.acc-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.acc{display:grid;grid-template-columns:44px 1fr;gap:28px;position:relative}
+.acc::before{content:"";position:absolute;left:21px;top:62px;bottom:-34px;width:1px;background:var(--line)}
+.acc:last-child::before{display:none}
+.acc-num{width:44px;height:44px;margin-top:18px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--font-mono);font-size:13px;color:var(--muted);background:var(--bg);position:relative;z-index:1;transition:border-color .3s,color .3s,box-shadow .3s}
+.acc.open .acc-num{border-color:var(--accent-2);color:var(--accent-2);box-shadow:0 0 0 6px var(--glow)}
+.acc-box{border:1px solid var(--line);border-radius:22px;background:var(--surface);transition:border-color .3s}
+.acc-box:hover{border-color:color-mix(in srgb,var(--accent-2) 45%,var(--line))}
+.acc.open .acc-box{border-color:var(--accent-2)}
+.acc-h{margin:0}
+.acc-head{all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 28px;cursor:pointer;border-radius:22px}
+.acc-head:focus-visible{outline:2px solid var(--accent-2);outline-offset:-2px}
+.acc-head .t{font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.2;letter-spacing:-.02em;color:var(--text)}
+.acc-tog{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--text);transition:transform .3s,border-color .3s,color .3s}
+.acc-tog svg{width:16px;height:16px}
+.acc.open .acc-tog{transform:rotate(45deg);border-color:var(--accent-2);color:var(--accent-2)}
+.acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.acc.open .acc-body{grid-template-rows:1fr}
+.acc-inner{overflow:hidden}
+.acc-inner>div{padding:0 28px 28px}
+.acc-inner p{margin:0 0 20px;color:var(--muted);max-width:64ch}
+.kw{display:flex;flex-wrap:wrap;gap:10px}
+.kw span{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:999px;background:color-mix(in srgb,var(--accent-2) 14%,var(--surface));color:var(--accent-2)}
+@media (prefers-reduced-motion:reduce){.acc-body,.acc-tog,.acc-num{transition:none}}
+@media (max-width:700px){.acc{grid-template-columns:1fr}.acc-num,.acc::before{display:none}.acc-head{padding:20px 22px}.acc-inner>div{padding:0 22px 22px}}
 
 /* ---------- projects ---------- */
 .featured{--p:var(--accent-2);margin-top:56px;display:grid;grid-template-columns:1.35fr 1fr;border:1px solid var(--p);transition:border-color .35s,box-shadow .35s;border-radius:var(--radius-lg);overflow:hidden;background:var(--surface);min-height:520px;box-shadow:0 40px 90px -50px var(--p)}
@@ -326,7 +370,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="hero-inner">
       <span class="tag mono" data-i18n="hero.tag">Head de Design · Diretor de Arte</span>
       <h1 data-i18n="hero.title">Design que transforma <span class="hl">campanhas em experiências</span> que engajam.</h1>
-      <p class="lead" data-i18n="hero.lead">Lidero times criativos, desenho jornadas gamificadas e uso IA para tirar o peso dos processos. Começo pela raiz do problema e só paro quando a solução fica simples.</p>
+      <p class="lead" data-i18n="hero.lead">Lidero times criativos e a direção de arte de marcas de iGaming, com experiência no Brasil e na Costa Rica. Desenho jornadas gamificadas e uso IA para tirar o peso dos processos, sempre começando pela raiz do problema.</p>
       <div class="hero-ctas">
         <a href="#projetos" class="btn btn-primary" data-i18n="hero.cta1">Ver projetos</a>
         <a href="assets/cv/Curriculo_Ismael_Oliveira.pdf" download="Curriculo_Ismael_Oliveira.pdf" class="btn btn-ghost cv-link">
@@ -382,15 +426,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div>
         <h2 class="title" data-i18n="about.title">Jogos, história e design sempre jogaram no mesmo time.</h2>
         <p class="about-intro" data-i18n="about.intro">Sou Ismael, Head de Design e Diretor de Arte. Lidero equipes criativas, coloco a gamificação no centro da estratégia e uso IA e automação para que o time gaste energia criando, e não repetindo.</p>
-        <dl class="stats" id="stats"><div><dt>+20</dt><dd>pessoas já passaram pela minha liderança</dd></div><div><dt>2</dt><dd>marcas de iGaming lideradas simultaneamente</dd></div><div><dt>+70</dt><dd>campanhas, torneios e promoções entregues</dd></div></dl>
       </div>
     </div>
+    <ul class="stats" id="stats"><li><span class="kick">Liderança</span><strong>+20</strong><span class="lbl">pessoas já passaram pela minha liderança</span></li><li><span class="kick">Brasil</span><strong>2</strong><span class="lbl">marcas nacionais de iGaming lideradas simultaneamente</span></li><li><span class="kick">Internacional</span><strong>1</strong><span class="lbl">marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais</span></li><li><span class="kick">Entregas</span><strong>+70</strong><span class="lbl">campanhas, torneios e promoções</span></li></ul>
     <div class="journey">
       <div class="journey-head">
         <h3 data-i18n="about.jTitle">Como cheguei até aqui</h3>
-        <p data-i18n="about.jSub">Um caminho que passou por eletrônica, resenhas de jogos, sala de aula e muita curiosidade.</p>
+        <p data-i18n="about.jSub">Uma jornada em 7 fases, de um ferro de solda à liderança de design. Desbloqueie uma fase por vez.</p>
+        <div class="quest">
+          <div class="quest-top mono" aria-live="polite"><span id="qLabel">Fase 1 de 7</span><b id="qCount">14%</b></div>
+          <div class="quest-bar" id="qBar" aria-hidden="true"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+          <div class="quest-ctas">
+            <button class="btn btn-primary btn-sm" id="qNext" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 7.6-1.8"></path></svg><span>Desbloquear próxima fase</span></button>
+            <button class="link-btn" id="qAll" type="button">Ver tudo de uma vez</button>
+          </div>
+        </div>
       </div>
-      <ol class="steps" id="steps"><li class="step"><div class="when mono">O começo</div><h4>Tudo começou com um ferro de solda</h4><p>No ensino integrado em Eletrônica do IFPI, aprendi a abrir as coisas para entender como elas funcionam por dentro. Esse hábito de ir na raiz do problema nunca mais me largou.</p></li><li class="step"><div class="when mono">2014 — 2018</div><h4>Testar jogos era literalmente o trabalho</h4><p>No Zigg Downloads, um portal de tecnologia, eu escrevia tutoriais e resenhas de jogos e aplicativos. A regra era simples: para escrever, tinha que jogar e testar de verdade. Eu amava. Foi ali que aprendi a explicar o complexo de um jeito que qualquer pessoa entende.</p></li><li class="step"><div class="when mono">UESPI · 2021</div><h4>Um desvio que virou ponte</h4><p>Me apaixonei por História e me formei em Licenciatura Plena na UESPI. Meu TCC juntou os dois mundos que eu mais gostava: jogos e tecnologia dentro da sala de aula.</p></li><li class="step"><div class="when mono">Sala de aula</div><h4>Professor de dia, designer o tempo todo</h4><p>Dei aula, mas o design nunca saiu do meu lado: sempre tinha uma arte, um material ou um vídeo para criar. Em 2022 veio a porta de entrada oficial, como designer no Instituto Pablo Piccasso.</p></li><li class="step"><div class="when mono">2023 — 2024</div><h4>Quando os dois mundos se encontraram</h4><p>Virei Professor Gamer na Studio Games: ensinava jogos competitivos e softwares de edição, organizava campeonatos de e-sports e acompanhava de perto talentos crescendo.</p></li><li class="step"><div class="when mono">2023 — 2024</div><h4>Subindo de nível</h4><p>Quanto mais o design entrava na minha vida, mais eu queria me especializar: técnico em Desenvolvimento de Sistemas no IFPI, pós em Marketing Digital e pós em Design Gráfico. Cada etapa destravou uma ferramenta nova.</p></li><li class="step"><div class="when mono">2024 — 2026</div><h4>Liderando o jogo</h4><p>Fui Head de Design e Diretor de Arte de dois produtos de iGaming, 4Play e Pagol. Liderei mais de 20 pessoas ao longo dessa jornada, com times de até 12 ao mesmo tempo, coloquei a gamificação no centro da estratégia e criei uma automação baseada em templates que deu agilidade a todas as entregas.</p></li></ol>
+      <ol class="steps" id="steps" style="--prog: 4px;"><li class="step open current "><div class="when mono">O começo</div><div class="step-body"><h4>Tudo começou com um ferro de solda</h4><p>No ensino integrado em Eletrônica do IFPI, aprendi a abrir as coisas para entender como elas funcionam por dentro. Esse hábito de ir na raiz do problema nunca mais me largou.</p></div></li><li class="step next  "><div class="when mono">2014 — 2018</div><div class="step-body" hidden=""><h4>Testar jogos era literalmente o trabalho</h4><p>No Zigg Downloads, um portal de tecnologia, eu escrevia tutoriais e resenhas de jogos e aplicativos. A regra era simples: para escrever, tinha que jogar e testar de verdade. Eu amava. Foi ali que aprendi a explicar o complexo de um jeito que qualquer pessoa entende.</p></div><button class="unlock" type="button" data-i="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 7.6-1.8"></path></svg><span>Desbloquear fase 2</span></button></li><li class="step locked  "><div class="when mono">UESPI · 2021</div><div class="step-body" hidden=""><h4>Um desvio que virou ponte</h4><p>Me apaixonei por História e me formei em Licenciatura Plena na UESPI. Meu TCC juntou os dois mundos que eu mais gostava: jogos e tecnologia dentro da sala de aula.</p></div><div class="locked-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>Fase bloqueada</span></div></li><li class="step locked  "><div class="when mono">Sala de aula</div><div class="step-body" hidden=""><h4>Professor de dia, designer o tempo todo</h4><p>Dei aula, mas o design nunca saiu do meu lado: sempre tinha uma arte, um material ou um vídeo para criar. Em 2022 veio a porta de entrada oficial, como designer no Instituto Pablo Piccasso.</p></div><div class="locked-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>Fase bloqueada</span></div></li><li class="step locked  "><div class="when mono">2023 — 2024</div><div class="step-body" hidden=""><h4>Quando os dois mundos se encontraram</h4><p>Virei Professor Gamer na Studio Games: ensinava jogos competitivos e softwares de edição, organizava campeonatos de e-sports e acompanhava de perto talentos crescendo.</p></div><div class="locked-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>Fase bloqueada</span></div></li><li class="step locked  "><div class="when mono">2023 — 2024</div><div class="step-body" hidden=""><h4>Subindo de nível</h4><p>Quanto mais o design entrava na minha vida, mais eu queria me especializar: técnico em Desenvolvimento de Sistemas no IFPI, pós em Marketing Digital e pós em Design Gráfico. Cada etapa destravou uma ferramenta nova.</p></div><div class="locked-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>Fase bloqueada</span></div></li><li class="step locked  "><div class="when mono">2024 — 2026</div><div class="step-body" hidden=""><h4>Liderando o jogo</h4><p>Fui Head de Design e Diretor de Arte da 4Play e da Pagol no Brasil e Designer Sênior da 4Play Costa Rica, responsável por toda a comunicação e as redes sociais em espanhol. Liderei mais de 20 pessoas ao longo dessa jornada, com times de até 12 ao mesmo tempo, coloquei a gamificação no centro da estratégia e criei uma automação baseada em templates que deu agilidade a todas as entregas.</p></div><div class="locked-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span>Fase bloqueada</span></div></li></ol>
     </div>
   </div>
 </section>
@@ -403,7 +455,49 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h2 class="title" data-i18n="svc.title">Do conceito à última peça no ar.</h2>
       <p class="sub" data-i18n="svc.sub">As frentes onde eu entro para fazer o design trabalhar a favor do produto, do time e do resultado.</p>
     </div>
-    <ul class="svc-list" id="svcList"><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.5-.8 1.5-1.6 0-1-.7-1.4-.7-2.3 0-.9.8-1.6 1.7-1.6H17a4 4 0 0 0 4-4C21 6.7 17 3 12 3Z"></path><circle cx="7.5" cy="11" r="1.2"></circle><circle cx="10.5" cy="7" r="1.2"></circle><circle cx="15" cy="7.5" r="1.2"></circle></svg>Direção de arte</h3><p>Conceito visual de campanhas e projetos temáticos, curadoria do acervo de assets e consistência em todos os canais.</p><div class="chips"><span class="chip">Campanhas</span><span class="chip">Assets</span><span class="chip">Identidade visual</span></div></li><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"></circle><path d="M3 20c.6-3.4 3-5.4 6-5.4s5.4 2 6 5.4"></path><path d="M16 5.2a3 3 0 0 1 0 5.6M18 14.8c1.7.7 2.8 2.4 3 5.2"></path></svg>Liderança de design</h3><p>Gestão de times criativos, organização da esteira de produção, mentoria e produção lado a lado quando o prazo aperta.</p><div class="chips"><span class="chip">Gestão</span><span class="chip">Mentoria</span><span class="chip">Monday</span><span class="chip">Trello</span></div></li><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="11" rx="5"></rect><path d="M7 11v3M5.5 12.5h3"></path><circle cx="15.5" cy="11.5" r=".9"></circle><circle cx="17.5" cy="13.8" r=".9"></circle></svg>Gamificação</h3><p>Missões, recompensas e jornadas visuais que deixam a experiência fluida, fácil de entender e divertida, aumentando retenção e engajamento.</p><div class="chips"><span class="chip">Smartico</span><span class="chip">Retenção</span><span class="chip">Engajamento</span></div></li><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4-2v-4z"></path></svg>CRM e campanhas segmentadas</h3><p>Design para cada público e canal (e-mail, push, pop-up, redes sociais e site) alinhado ao briefing e aos gatilhos certos de conversão.</p><div class="chips"><span class="chip">Funis</span><span class="chip">Segmentação</span><span class="chip">InPlaySoft</span></div></li><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"></rect><path d="M3 9h18M8 13l3 2-3 2M13 17h3"></path></svg>UX/UI e motion</h3><p>Interfaces claras e peças animadas que explicam, engajam e vendem o produto.</p><div class="chips"><span class="chip">Figma</span><span class="chip">After Effects</span><span class="chip">Premiere</span><span class="chip">Photoshop</span></div></li><li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg>Automação com IA</h3><p>Fluxos que partem de um template padrão e geram cada formato automaticamente: mais agilidade, menos retrabalho e menor custo de produção.</p><div class="chips"><span class="chip">IA</span><span class="chip">Python</span><span class="chip">Automação</span></div></li></ul>
+    <ol class="acc-list" id="svcList"><li class="acc open" data-i="0">
+      <span class="acc-num" aria-hidden="true">01</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="true" aria-controls="svc-0"><span class="t">Direção de arte</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-0" role="region" aria-hidden="false"><div class="acc-inner"><div>
+          <p>Conceito visual de campanhas e projetos temáticos, curadoria do acervo de assets e consistência em todos os canais.</p><div class="kw"><span>Conceito visual</span><span>Campanhas temáticas</span><span>Acervo de assets</span><span>Identidade visual</span><span>Consistência</span></div>
+        </div></div></div>
+      </div></li><li class="acc" data-i="1">
+      <span class="acc-num" aria-hidden="true">02</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="false" aria-controls="svc-1"><span class="t">Liderança de design</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-1" role="region" aria-hidden="true"><div class="acc-inner"><div>
+          <p>Gestão de times criativos, organização da esteira de produção, mentoria e produção lado a lado quando o prazo aperta.</p><div class="kw"><span>Gestão de times</span><span>Esteira de produção</span><span>Mentoria</span><span>Priorização</span><span>Monday · Trello</span></div>
+        </div></div></div>
+      </div></li><li class="acc" data-i="2">
+      <span class="acc-num" aria-hidden="true">03</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="false" aria-controls="svc-2"><span class="t">Gamificação</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-2" role="region" aria-hidden="true"><div class="acc-inner"><div>
+          <p>Missões, recompensas e jornadas visuais que deixam a experiência fluida, fácil de entender e divertida, aumentando retenção e engajamento.</p><div class="kw"><span>Missões</span><span>Torneios</span><span>Recompensas</span><span>Retenção</span><span>Smartico</span></div>
+        </div></div></div>
+      </div></li><li class="acc" data-i="3">
+      <span class="acc-num" aria-hidden="true">04</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="false" aria-controls="svc-3"><span class="t">CRM e campanhas segmentadas</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-3" role="region" aria-hidden="true"><div class="acc-inner"><div>
+          <p>Design para cada público, canal e idioma (e-mail, push, pop-up, redes sociais e site, em português e espanhol), alinhado ao briefing e aos gatilhos certos de conversão.</p><div class="kw"><span>Funis</span><span>Segmentação</span><span>Multicanal</span><span>Português e espanhol</span><span>InPlaySoft</span></div>
+        </div></div></div>
+      </div></li><li class="acc" data-i="4">
+      <span class="acc-num" aria-hidden="true">05</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="false" aria-controls="svc-4"><span class="t">UX/UI e motion</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-4" role="region" aria-hidden="true"><div class="acc-inner"><div>
+          <p>Interfaces claras e peças animadas que explicam, engajam e vendem o produto.</p><div class="kw"><span>Figma</span><span>Interfaces</span><span>Motion design</span><span>After Effects</span><span>Premiere</span></div>
+        </div></div></div>
+      </div></li><li class="acc" data-i="5">
+      <span class="acc-num" aria-hidden="true">06</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="false" aria-controls="svc-5"><span class="t">Automação com IA</span><span class="acc-tog" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <div class="acc-body" id="svc-5" role="region" aria-hidden="true"><div class="acc-inner"><div>
+          <p>Fluxos que partem de um template padrão e geram cada formato automaticamente: mais agilidade, menos retrabalho e menor custo de produção.</p><div class="kw"><span>Template padrão</span><span>IA generativa</span><span>Regras visuais</span><span>Agilidade</span><span>Python</span></div>
+        </div></div></div>
+      </div></li></ol>
   </div>
 </section>
 
@@ -412,17 +506,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="eyebrow mono" data-i18n="proj.eyebrow">Projetos</div>
     <h2 class="title" data-i18n="proj.title">O que eu liderei e o que eu construí.</h2>
-    <p class="sub" data-i18n="proj.sub">Duas marcas de iGaming sob minha direção de arte e dois projetos próprios que nasceram de problemas reais.</p>
+    <p class="sub" data-i18n="proj.sub">Marcas de iGaming no Brasil e na Costa Rica e dois projetos próprios que nasceram de problemas reais.</p>
 
     <article class="featured" aria-live="polite" style="--p: #FF3B4E;">
       <div class="cover" id="fCover"><img src="assets/img/4play.webp" alt="Plataforma 4Play exibida em monitor e smartphone em um setup gamer com luz vermelha" width="1600" height="1195" loading="lazy" decoding="async"></div>
       <div class="f-info">
-        <div class="f-meta mono" id="fMeta">iGaming · 2024 — 2026</div>
-        <span class="pill" id="fPill">Direção de arte · Gamificação · CRM</span>
+        <div class="f-meta mono" id="fMeta">iGaming · Brasil e Costa Rica · 2024 — 2026</div>
+        <span class="pill" id="fPill">Direção de arte · Gamificação · Internacional</span>
         <h3 id="fTitle">Diversão em outro nível, em qualquer tela</h3>
-        <p id="fDesc">Direção de arte de uma marca de iGaming com identidade vermelha e energia gamer: missões, torneios e recompensas comunicados com clareza do desktop ao mobile.</p>
-        <div class="tags" id="fTags"><span class="tag-sq">Direção de arte</span><span class="tag-sq">Gamificação</span><span class="tag-sq">Smartico</span><span class="tag-sq">CRM</span></div>
-        <p class="f-role" id="fRole"><b>Head &amp; DA</b>Liderança do time, direção de arte e esteira de produção.</p>
+        <p id="fDesc">Direção de arte no Brasil e produção completa de comunicação e redes sociais na Costa Rica, com identidade vermelha e energia gamer: missões, torneios e recompensas comunicados com clareza do desktop ao mobile.</p>
+        <div class="tags" id="fTags"><span class="tag-sq">Direção de arte</span><span class="tag-sq">Gamificação</span><span class="tag-sq">Português e espanhol</span><span class="tag-sq">Smartico</span></div>
+        <p class="f-role" id="fRole"><b>Head &amp; DA</b>Liderança e direção de arte no Brasil; Designer Sênior na Costa Rica.</p>
         <div class="f-foot">
           <button class="link-btn" id="openCase" type="button"><span data-i18n="proj.see">Ver case</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg>
@@ -435,7 +529,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
       </div>
     </article>
-    <div class="thumbs" id="thumbs"><button class="thumb" type="button" data-i="0" aria-current="true" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>4Play</strong><span>iGaming · 2024 — 2026</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Pagol</strong><span>iGaming · 2024 — 2026</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Projeto próprio · Ferramenta</span></div></button><button class="thumb" type="button" data-i="3" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Projeto próprio · Produto</span></div></button></div>
+    <div class="thumbs" id="thumbs"><button class="thumb" type="button" data-i="0" aria-current="true" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>4Play</strong><span>iGaming · Brasil e Costa Rica · 2024 — 2026</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Pagol</strong><span>iGaming · 2024 — 2026</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Projeto próprio · Ferramenta</span></div></button><button class="thumb" type="button" data-i="3" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Projeto próprio · Produto</span></div></button></div>
   </div>
 </section>
 
@@ -485,7 +579,7 @@ const I18N = {
     "nav.home":"Página inicial","nav.about":"Sobre","nav.services":"Serviços","nav.projects":"Projetos","nav.contact":"Contato",
     "hero.tag":"Head de Design · Diretor de Arte",
     "hero.title":'Design que transforma <span class="hl">campanhas em experiências</span> que engajam.',
-    "hero.lead":"Lidero times criativos, desenho jornadas gamificadas e uso IA para tirar o peso dos processos. Começo pela raiz do problema e só paro quando a solução fica simples.",
+    "hero.lead":"Lidero times criativos e a direção de arte de marcas de iGaming, com experiência no Brasil e na Costa Rica. Desenho jornadas gamificadas e uso IA para tirar o peso dos processos, sempre começando pela raiz do problema.",
     "hero.cta1":"Ver projetos","hero.cta2":"Baixar currículo",
     "hero.card":"<li>Criar</li><li>Automatizar</li><li>Engajar</li><li>Repetir</li>",
     "hero.cardFoot":"Design que joga junto",
@@ -494,16 +588,17 @@ const I18N = {
     "about.eyebrow":"Sobre mim","about.caption":"Head de Design",
     "about.title":"Jogos, história e design sempre jogaram no mesmo time.",
     "about.intro":"Sou Ismael, Head de Design e Diretor de Arte. Lidero equipes criativas, coloco a gamificação no centro da estratégia e uso IA e automação para que o time gaste energia criando, e não repetindo.",
-    "stats":[["+20","pessoas já passaram pela minha liderança"],["2","marcas de iGaming lideradas simultaneamente"],["+70","campanhas, torneios e promoções entregues"]],
+    "stats":[["Liderança","+20","pessoas já passaram pela minha liderança"],["Brasil","2","marcas nacionais de iGaming lideradas simultaneamente"],["Internacional","1","marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais"],["Entregas","+70","campanhas, torneios e promoções"]],
     "skip":"Pular para o conteúdo","contact.cta":"Enviar e-mail",
     "about.jTitle":"Como cheguei até aqui",
-    "about.jSub":"Um caminho que passou por eletrônica, resenhas de jogos, sala de aula e muita curiosidade.",
+    "about.jSub":"Uma jornada em 7 fases, de um ferro de solda à liderança de design. Desbloqueie uma fase por vez.",
+    "story.phase":"Fase","story.of":"de","story.next":"Desbloquear próxima fase","story.all":"Ver tudo de uma vez","story.done":"Jornada completa ✦","story.reset":"Recomeçar a jornada","story.locked":"Fase bloqueada","story.unlock":"Desbloquear fase",
     "svc.eyebrow":"Serviços",
     "svc.title":"Do conceito à última peça no ar.",
     "svc.sub":"As frentes onde eu entro para fazer o design trabalhar a favor do produto, do time e do resultado.",
     "proj.eyebrow":"Projetos",
     "proj.title":"O que eu liderei e o que eu construí.",
-    "proj.sub":"Duas marcas de iGaming sob minha direção de arte e dois projetos próprios que nasceram de problemas reais.",
+    "proj.sub":"Marcas de iGaming no Brasil e na Costa Rica e dois projetos próprios que nasceram de problemas reais.",
     "proj.see":"Ver case",
     "case.context":"Contexto","case.did":"O que eu fiz","case.result":"Resultado",
     "contact.eyebrow":"Contato",
@@ -516,7 +611,7 @@ const I18N = {
     "nav.home":"Home","nav.about":"About","nav.services":"Services","nav.projects":"Projects","nav.contact":"Contact",
     "hero.tag":"Head of Design · Art Director",
     "hero.title":'Design that turns <span class="hl">campaigns into experiences</span> people engage with.',
-    "hero.lead":"I lead creative teams, design gamified journeys and use AI to take the weight off processes. I start at the root of the problem and only stop when the solution is simple.",
+    "hero.lead":"I lead creative teams and art direction for iGaming brands, with experience in Brazil and Costa Rica. I design gamified journeys and use AI to take the weight off processes, always starting at the root of the problem.",
     "hero.cta1":"See projects","hero.cta2":"Download résumé (PT-BR)",
     "hero.card":"<li>Create</li><li>Automate</li><li>Engage</li><li>Repeat</li>",
     "hero.cardFoot":"Design that plays along",
@@ -525,16 +620,17 @@ const I18N = {
     "about.eyebrow":"About me","about.caption":"Head of Design",
     "about.title":"Games, history and design have always played on the same team.",
     "about.intro":"I'm Ismael, Head of Design and Art Director. I lead creative teams, put gamification at the center of strategy and use AI and automation so the team spends its energy creating, not repeating.",
-    "stats":[["+20","people have worked under my leadership"],["2","iGaming brands led simultaneously"],["+70","campaigns, tournaments and promotions delivered"]],
+    "stats":[["Leadership","+20","people have worked under my leadership"],["Brazil","2","national iGaming brands led simultaneously"],["International","1","iGaming brand in Costa Rica. Senior Designer in charge of all communication and social media production"],["Delivery","+70","campaigns, tournaments and promotions"]],
     "skip":"Skip to content","contact.cta":"Send an email",
     "about.jTitle":"How I got here",
-    "about.jSub":"A path through electronics, game reviews, classrooms and a lot of curiosity.",
+    "about.jSub":"A journey in 7 levels, from a soldering iron to design leadership. Unlock one level at a time.",
+    "story.phase":"Level","story.of":"of","story.next":"Unlock next level","story.all":"Show everything","story.done":"Journey complete ✦","story.reset":"Restart the journey","story.locked":"Locked level","story.unlock":"Unlock level",
     "svc.eyebrow":"Services",
     "svc.title":"From concept to the last asset going live.",
     "svc.sub":"Where I step in to make design work for the product, the team and the results.",
     "proj.eyebrow":"Projects",
     "proj.title":"What I led and what I built.",
-    "proj.sub":"Two iGaming brands under my art direction, plus two projects of my own born from real problems.",
+    "proj.sub":"iGaming brands in Brazil and Costa Rica, plus two projects of my own born from real problems.",
     "proj.see":"View case",
     "case.context":"Context","case.did":"What I did","case.result":"Outcome",
     "contact.eyebrow":"Contact",
@@ -572,8 +668,8 @@ const STEPS = [
          en:"The more design took over my life, the more I wanted to specialize: a technical degree in Systems Development at IFPI, a postgrad in Digital Marketing and another in Graphic Design. Each one unlocked a new tool."}},
   {when:{pt:"2024 — 2026",en:"2024 — 2026"},
    title:{pt:"Liderando o jogo",en:"Leading the game"},
-   text:{pt:"Fui Head de Design e Diretor de Arte de dois produtos de iGaming, 4Play e Pagol. Liderei mais de 20 pessoas ao longo dessa jornada, com times de até 12 ao mesmo tempo, coloquei a gamificação no centro da estratégia e criei uma automação baseada em templates que deu agilidade a todas as entregas.",
-         en:"I was Head of Design and Art Director for two iGaming products, 4Play and Pagol. I led more than 20 people along the way, with teams of up to 12 at a time, put gamification at the core of the strategy and built a template-based automation that made every delivery faster."}}
+   text:{pt:"Fui Head de Design e Diretor de Arte da 4Play e da Pagol no Brasil e Designer Sênior da 4Play Costa Rica, responsável por toda a comunicação e as redes sociais em espanhol. Liderei mais de 20 pessoas ao longo dessa jornada, com times de até 12 ao mesmo tempo, coloquei a gamificação no centro da estratégia e criei uma automação baseada em templates que deu agilidade a todas as entregas.",
+         en:"I was Head of Design and Art Director for 4Play and Pagol in Brazil, and Senior Designer for 4Play Costa Rica, in charge of all communication and social media in Spanish. I led more than 20 people along the way, with teams of up to 12 at a time, put gamification at the core of the strategy and built a template-based automation that made every delivery faster."}}
 ];
 
 const ICONS = {
@@ -595,8 +691,8 @@ const SERVICES = [
    text:{pt:"Missões, recompensas e jornadas visuais que deixam a experiência fluida, fácil de entender e divertida, aumentando retenção e engajamento.",en:"Missions, rewards and visual journeys that make the experience smooth, easy to understand and fun, driving retention and engagement."},
    chips:["Smartico","Retenção","Engajamento"], chipsEn:["Smartico","Retention","Engagement"]},
   {icon:"funnel", title:{pt:"CRM e campanhas segmentadas",en:"CRM & segmented campaigns"},
-   text:{pt:"Design para cada público e canal (e-mail, push, pop-up, redes sociais e site) alinhado ao briefing e aos gatilhos certos de conversão.",en:"Design for every audience and channel (email, push, pop-up, social and website) aligned with the brief and the right conversion triggers."},
-   chips:["Funis","Segmentação","InPlaySoft"], chipsEn:["Funnels","Segmentation","InPlaySoft"]},
+   text:{pt:"Design para cada público, canal e idioma (e-mail, push, pop-up, redes sociais e site, em português e espanhol), alinhado ao briefing e aos gatilhos certos de conversão.",en:"Design for every audience, channel and language (email, push, pop-up, social and website, in Portuguese and Spanish), aligned with the brief and the right conversion triggers."},
+   chips:["Funis","Segmentação","PT e ES","InPlaySoft"], chipsEn:["Funnels","Segmentation","PT & ES","InPlaySoft"]},
   {icon:"ui", title:{pt:"UX/UI e motion",en:"UX/UI & motion"},
    text:{pt:"Interfaces claras e peças animadas que explicam, engajam e vendem o produto.",en:"Clear interfaces and motion pieces that explain, engage and sell the product."},
    chips:["Figma","After Effects","Premiere","Photoshop"], chipsEn:["Figma","After Effects","Premiere","Photoshop"]},
@@ -605,18 +701,88 @@ const SERVICES = [
    chips:["IA","Python","Automação"], chipsEn:["AI","Python","Automation"]}
 ];
 
+const KW = [
+  {pt:["Conceito visual","Campanhas temáticas","Acervo de assets","Identidade visual","Consistência"],en:["Visual concept","Themed campaigns","Asset library","Visual identity","Consistency"]},
+  {pt:["Gestão de times","Esteira de produção","Mentoria","Priorização","Monday · Trello"],en:["Team management","Production pipeline","Mentoring","Prioritization","Monday · Trello"]},
+  {pt:["Missões","Torneios","Recompensas","Retenção","Smartico"],en:["Missions","Tournaments","Rewards","Retention","Smartico"]},
+  {pt:["Funis","Segmentação","Multicanal","Português e espanhol","InPlaySoft"],en:["Funnels","Segmentation","Multichannel","Portuguese & Spanish","InPlaySoft"]},
+  {pt:["Figma","Interfaces","Motion design","After Effects","Premiere"],en:["Figma","Interfaces","Motion design","After Effects","Premiere"]},
+  {pt:["Template padrão","IA generativa","Regras visuais","Agilidade","Python"],en:["Standard template","Generative AI","Visual rules","Speed","Python"]}
+];
+let openSvc = 0, phase = 1, justUnlocked = -1;
+const PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+const LOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+const UNLOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 7.6-1.8"/></svg>';
+
+function renderServices(){
+  $("#svcList").innerHTML = SERVICES.map((sv,i)=>{
+    const open = i===openSvc;
+    return `<li class="acc${open?" open":""}" data-i="${i}">
+      <span class="acc-num" aria-hidden="true">${String(i+1).padStart(2,"0")}</span>
+      <div class="acc-box">
+        <h3 class="acc-h"><button class="acc-head" type="button" aria-expanded="${open}" aria-controls="svc-${i}"><span class="t">${sv.title[lang]}</span><span class="acc-tog" aria-hidden="true">${PLUS}</span></button></h3>
+        <div class="acc-body" id="svc-${i}" role="region" aria-hidden="${!open}"><div class="acc-inner"><div>
+          <p>${sv.text[lang]}</p><div class="kw">${KW[i][lang].map(k=>`<span>${k}</span>`).join("")}</div>
+        </div></div></div>
+      </div></li>`;}).join("");
+}
+function toggleService(i){
+  openSvc = (openSvc===i) ? -1 : i;
+  document.querySelectorAll("#svcList .acc").forEach(li=>{
+    const on = +li.dataset.i===openSvc;
+    li.classList.toggle("open",on);
+    li.querySelector(".acc-head").setAttribute("aria-expanded",on);
+    li.querySelector(".acc-body").setAttribute("aria-hidden",!on);
+  });
+}
+
+function renderStory(){
+  const t=I18N[lang], total=STEPS.length;
+  $("#steps").innerHTML = STEPS.map((st,i)=>{
+    const state = i<phase ? "open" : (i===phase ? "next" : "locked");
+    const cls = ["step",state, i===phase-1?"current":"", i===justUnlocked?"just":""].join(" ");
+    const body = `<div class="step-body"${i<phase?"":" hidden"}><h4>${st.title[lang]}</h4><p>${st.text[lang]}</p></div>`;
+    const gate = state==="next"
+      ? `<button class="unlock" type="button" data-i="${i}">${UNLOCK}<span>${t["story.unlock"]} ${i+1}</span></button>`
+      : state==="locked" ? `<div class="locked-row">${LOCK}<span>${t["story.locked"]}</span></div>` : "";
+    return `<li class="${cls}"><div class="when mono">${st.when[lang]}</div>${body}${gate}</li>`;
+  }).join("");
+  const done = phase>=total;
+  $("#qLabel").textContent = done ? t["story.done"] : `${t["story.phase"]} ${phase} ${t["story.of"]} ${total}`;
+  $("#qCount").textContent = `${Math.round(phase/total*100)}%`;
+  $("#qBar").innerHTML = STEPS.map((_,i)=>`<i class="${i<phase?"on":""}"></i>`).join("");
+  $("#qNext").hidden = done;
+  $("#qNext span").textContent = t["story.next"];
+  $("#qAll").textContent = done ? t["story.reset"] : t["story.all"];
+  requestAnimationFrame(()=>{
+    const cur = document.querySelector("#steps .step.current");
+    if(cur) $("#steps").style.setProperty("--prog", (cur.offsetTop + 4) + "px");
+  });
+}
+function unlock(n){
+  const total=STEPS.length;
+  justUnlocked = n<=total ? n-1 : -1;
+  phase = Math.min(n,total);
+  renderStory();
+  const li = document.querySelectorAll("#steps .step")[phase-1];
+  if(li && justUnlocked>=0){
+    const r=li.getBoundingClientRect();
+    if(r.bottom>innerHeight || r.top<80) li.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+  }
+}
+
 const PROJECTS = [
   {id:"4play", name:"4Play", color:"#FF3B4E", image:"assets/img/4play.webp", thumb:"assets/img/4play-thumb.webp",
    alt:{pt:"Plataforma 4Play exibida em monitor e smartphone em um setup gamer com luz vermelha",en:"4Play platform on a monitor and smartphone in a red-lit gaming setup"},
-   meta:{pt:"iGaming · 2024 — 2026",en:"iGaming · 2024 — 2026"},
-   pill:{pt:"Direção de arte · Gamificação · CRM",en:"Art direction · Gamification · CRM"},
+   meta:{pt:"iGaming · Brasil e Costa Rica · 2024 — 2026",en:"iGaming · Brazil and Costa Rica · 2024 — 2026"},
+   pill:{pt:"Direção de arte · Gamificação · Internacional",en:"Art direction · Gamification · International"},
    title:{pt:"Diversão em outro nível, em qualquer tela",en:"Next-level fun, on any screen"},
-   desc:{pt:"Direção de arte de uma marca de iGaming com identidade vermelha e energia gamer: missões, torneios e recompensas comunicados com clareza do desktop ao mobile.",en:"Art direction for an iGaming brand with a red, gamer-driven identity: missions, tournaments and rewards communicated clearly from desktop to mobile."},
-   tags:{pt:["Direção de arte","Gamificação","Smartico","CRM"],en:["Art direction","Gamification","Smartico","CRM"]},
-   role:{pt:["Head & DA","Liderança do time, direção de arte e esteira de produção."],en:["Head & AD","Team leadership, art direction and production pipeline."]},
-   ctx:{pt:"Uma marca de iGaming que precisava de campanhas constantes, segmentadas por público e espalhadas por vários canais, sem perder consistência visual nem ritmo de entrega.",en:"An iGaming brand that needed constant campaigns, segmented by audience and spread across many channels, without losing visual consistency or delivery pace."},
-   did:{pt:["Direção de arte de campanhas temáticas e curadoria do acervo de assets repassado ao time.","Gamificação como pilar de retenção: missões, torneios e recompensas com materiais fluidos, compreensíveis e divertidos.","Peças replicadas por público em e-mail, push, pop-up, inbox, banners, redes sociais e site.","Gestão de até 8 designers e 4 editores de vídeo, produzindo junto nos momentos de entrega."],
-        en:["Art direction for themed campaigns and curation of the asset library handed to the team.","Gamification as a retention pillar: missions, tournaments and rewards with smooth, clear and fun materials.","Assets replicated per audience across email, push, pop-up, inbox, banners, social and website.","Managing up to 8 designers and 4 video editors, producing alongside them at delivery time."]},
+   desc:{pt:"Direção de arte no Brasil e produção completa de comunicação e redes sociais na Costa Rica, com identidade vermelha e energia gamer: missões, torneios e recompensas comunicados com clareza do desktop ao mobile.",en:"Art direction in Brazil and full communication and social media production in Costa Rica, with a red, gamer-driven identity: missions, tournaments and rewards communicated clearly from desktop to mobile."},
+   tags:{pt:["Direção de arte","Gamificação","Português e espanhol","Smartico"],en:["Art direction","Gamification","Portuguese & Spanish","Smartico"]},
+   role:{pt:["Head & DA","Liderança e direção de arte no Brasil; Designer Sênior na Costa Rica."],en:["Head & AD","Leadership and art direction in Brazil; Senior Designer in Costa Rica."]},
+   ctx:{pt:"Uma marca de iGaming presente em dois mercados, Brasil e Costa Rica, que precisava de campanhas constantes, segmentadas por público e espalhadas por vários canais, sem perder consistência visual nem ritmo de entrega.",en:"An iGaming brand present in two markets, Brazil and Costa Rica, that needed constant campaigns, segmented by audience and spread across many channels, without losing visual consistency or delivery pace."},
+   did:{pt:["Direção de arte de campanhas temáticas e curadoria do acervo de assets repassado ao time.","Gamificação como pilar de retenção: missões, torneios e recompensas com materiais fluidos, compreensíveis e divertidos.","Peças replicadas por público em e-mail, push, pop-up, inbox, banners, redes sociais e site.","Na 4Play Costa Rica, como Designer Sênior: toda a produção de comunicação e redes sociais, em espanhol e pensada para o público local.","Gestão de até 8 designers e 4 editores de vídeo, produzindo junto nos momentos de entrega."],
+        en:["Art direction for themed campaigns and curation of the asset library handed to the team.","Gamification as a retention pillar: missions, tournaments and rewards with smooth, clear and fun materials.","Assets replicated per audience across email, push, pop-up, inbox, banners, social and website.","At 4Play Costa Rica, as Senior Designer: all communication and social media production, in Spanish and designed for the local audience.","Managing up to 8 designers and 4 video editors, producing alongside them at delivery time."]},
    res:{pt:"Com a esteira organizada e a automação baseada em templates, as entregas ganharam agilidade e consistência, e o time ganhou tempo para criar.",en:"With an organized pipeline and template-based automation, deliveries became faster and more consistent, and the team got time back to create."}},
   {id:"pagol", name:"Pagol", color:"#1FD68B", image:"assets/img/pagol.webp", thumb:"assets/img/pagol-thumb.webp",
    alt:{pt:"Plataforma Pagol exibida em notebook e smartphone em um escritório com luz verde",en:"Pagol platform on a laptop and smartphone in a green-lit office"},
@@ -627,8 +793,8 @@ const PROJECTS = [
    tags:{pt:["CRM","Funis","InPlaySoft","Motion"],en:["CRM","Funnels","InPlaySoft","Motion"]},
    role:{pt:["Head & DA","Direção de arte, fluxo de comunicação e mentoria do time."],en:["Head & AD","Art direction, communication flow and team mentoring."]},
    ctx:{pt:"Uma segunda marca com público, linguagem e calendário próprios, rodando em paralelo à primeira e dividindo a mesma equipe.",en:"A second brand with its own audience, voice and calendar, running in parallel with the first and sharing the same team."},
-   did:{pt:["Leitura de oportunidades nos funis junto ao CRM, transformando briefing em peças certeiras.","Identidade própria, distinta da 4Play, aplicada com consistência em todos os canais.","Organização das demandas das duas marcas na mesma esteira, mantendo ritmo e prazos.","Treinamento e mentoria do time, além de peças animadas e vídeos para campanhas e redes sociais."],
-        en:["Reading funnel opportunities with CRM, turning briefs into on-target assets.","Its own identity, distinct from 4Play, applied consistently across every channel.","Running both brands' demands through the same pipeline while keeping pace and deadlines.","Training and mentoring the team, plus motion pieces and videos for campaigns and social media."]},
+   did:{pt:["Leitura de oportunidades nos funis junto ao CRM, transformando briefing em peças certeiras.","Identidade própria, distinta da 4Play, aplicada com consistência em todos os canais.","Organização das demandas de todas as marcas na mesma esteira, mantendo ritmo e prazos.","Treinamento e mentoria do time, além de peças animadas e vídeos para campanhas e redes sociais."],
+        en:["Reading funnel opportunities with CRM, turning briefs into on-target assets.","Its own identity, distinct from 4Play, applied consistently across every channel.","Running every brand's demands through the same pipeline while keeping pace and deadlines.","Training and mentoring the team, plus motion pieces and videos for campaigns and social media."]},
    res:{pt:"Duas marcas com identidades distintas, entregues pelo mesmo time sem perder qualidade nem consistência.",en:"Two brands with distinct identities, delivered by the same team without losing quality or consistency."}},
   {id:"auto", name:{pt:"Automação de design",en:"Design automation"}, color:"#7B7BFF", image:"assets/img/automacao.webp", thumb:"assets/img/automacao-thumb.webp",
    alt:{pt:"Diagrama de automação: um template padrão passa por IA e regras e vira banner, pop-up, inbox e push",en:"Automation diagram: a standard template goes through AI and rules and becomes banner, pop-up, inbox and push"},
@@ -707,9 +873,9 @@ function render(){
   document.documentElement.lang = lang==="pt"?"pt-BR":"en";
   document.querySelectorAll("[data-i18n]").forEach(el=>{ const v=t[el.dataset.i18n]; if(v!==undefined) el.innerHTML=v; });
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===lang));
-  $("#stats").innerHTML = t.stats.map(([n,l])=>`<div><dt>${n}</dt><dd>${l}</dd></div>`).join("");
-  $("#steps").innerHTML = STEPS.map(s=>`<li class="step"><div class="when mono">${s.when[lang]}</div><h4>${s.title[lang]}</h4><p>${s.text[lang]}</p></li>`).join("");
-  $("#svcList").innerHTML = SERVICES.map(s=>`<li class="svc"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[s.icon]}</svg>${s.title[lang]}</h3><p>${s.text[lang]}</p><div class="chips">${(lang==="pt"?s.chips:s.chipsEn).map(c=>`<span class="chip">${c}</span>`).join("")}</div></li>`).join("");
+  $("#stats").innerHTML = t.stats.map(([k,n,l])=>`<li><span class="kick">${k}</span><strong>${n}</strong><span class="lbl">${l}</span></li>`).join("");
+  justUnlocked=-1; renderStory();
+  renderServices();
   $("#thumbs").innerHTML = PROJECTS.map((p,i)=>`<button class="thumb" type="button" data-i="${i}" aria-current="${i===current}" style="--tp:${p.color}"><div class="cover">${coverHTML(p,true)}</div><div class="t"><strong>${nameOf(p)}</strong><span>${p.meta[lang]}</span></div></button>`).join("");
   $("#thumbs").querySelectorAll(".thumb").forEach(b=>b.onclick=()=>show(+b.dataset.i,true));
   show(current,false);
@@ -729,6 +895,11 @@ function show(i,scroll){
   document.querySelectorAll(".thumb").forEach(b=>b.setAttribute("aria-current", +b.dataset.i===current));
   if(scroll) $(".featured").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"center"});
 }
+$("#svcList").addEventListener("click",e=>{ const b=e.target.closest(".acc-head"); if(b) toggleService(+b.closest(".acc").dataset.i); });
+$("#steps").addEventListener("click",e=>{ const b=e.target.closest(".unlock"); if(b) unlock(phase+1); });
+$("#qNext").onclick=()=>unlock(phase+1);
+$("#qAll").onclick=()=>{ if(phase>=STEPS.length){ justUnlocked=-1; phase=1; renderStory(); } else { justUnlocked=-1; phase=STEPS.length; renderStory(); } };
+addEventListener("resize",()=>{ const cur=document.querySelector("#steps .step.current"); if(cur) $("#steps").style.setProperty("--prog",(cur.offsetTop+4)+"px"); });
 $("#prev").onclick=()=>show(current-1);
 $("#next").onclick=()=>show(current+1);
 document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>{ lang=b.dataset.lang; try{localStorage.setItem("lang",lang)}catch(e){} render(); });
