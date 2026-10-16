@@ -8,15 +8,13 @@ Site estático (HTML, CSS e JavaScript puros), sem build. Pronto para GitHub + C
 index.html                      página completa (PT/EN)
 assets/img/                     imagens dos projetos, foto, favicon e imagem de compartilhamento
 assets/cv/Curriculo_Ismael_Oliveira.pdf   currículo baixado pelo botão do site
-robots.txt                      libera o site para os buscadores
+robots.txt / sitemap.xml        orientam os buscadores (Google, Bing)
 _headers                        cache das imagens no Cloudflare
 ```
 
-## Depois de publicar (uma vez só)
+## Endereço
 
-No `index.html`, troque `SEU-SITE.pages.dev` pelo endereço real do site nas três linhas indicadas
-no topo do arquivo (canonical, og:url e og:image). Isso faz o link aparecer com foto e título
-quando for compartilhado no LinkedIn e no WhatsApp.
+https://ismaeloliveiradesign.pages.dev
 
 ## Como atualizar
 
