@@ -39,7 +39,8 @@
 :root{
   --bg:#F3F5F9; --surface:#FFFFFF; --surface-2:#E9EDF5; --line:#D6DDE9;
   --text:#0B1324; --muted:#55627D; --accent:#1F5BE8; --accent-2:#1F5BE8;
-  --header-bg:rgba(243,245,249,.9);
+  --header-bg:rgba(243,245,249,.86);
+  --glow-a:rgba(31,91,232,.07); --glow-b:rgba(31,91,232,.045); --glow-c:rgba(31,91,232,.035);
   --font-display:"Manrope","Segoe UI",system-ui,sans-serif;
   --font-body:"Manrope","Segoe UI",system-ui,sans-serif;
   --wrap:1200px;
@@ -52,21 +53,29 @@
   :root:not([data-theme="light"]){
     --bg:#070C18; --surface:#0C1426; --surface-2:#111B31; --line:#1D2942;
     --text:#E8EDF7; --muted:#93A1BC; --accent:#3478F6; --accent-2:#7EB0FF;
-    --header-bg:rgba(7,12,24,.88);
+    --header-bg:rgba(7,12,24,.78);
+    --glow-a:rgba(52,120,246,.14); --glow-b:rgba(52,120,246,.07); --glow-c:rgba(28,58,130,.16);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --bg:#070C18; --surface:#0C1426; --surface-2:#111B31; --line:#1D2942;
   --text:#E8EDF7; --muted:#93A1BC; --accent:#3478F6; --accent-2:#7EB0FF;
-  --header-bg:rgba(7,12,24,.88);
+  --header-bg:rgba(7,12,24,.78);
+  --glow-a:rgba(52,120,246,.14); --glow-b:rgba(52,120,246,.07); --glow-c:rgba(28,58,130,.16);
   color-scheme:dark;
 }
 *,*::before,*::after{box-sizing:inherit}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{background:var(--bg)}
+body{margin:0;background:transparent;color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(70vw 55vw at 92% -12%, var(--glow-a), transparent 70%),
+    radial-gradient(55vw 50vw at -14% 58%, var(--glow-b), transparent 72%),
+    linear-gradient(180deg, transparent 35%, var(--glow-c) 100%)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--header-bg)}
 img{max-width:100%;height:auto;display:block}
 h1,h2,h3,h4{text-wrap:balance}
@@ -237,7 +246,8 @@ section.block{padding:112px 0;border-bottom:1px solid var(--line)}
 @media (max-width:700px){.acc{grid-template-columns:1fr}.acc-num,.acc::before{display:none}.acc-head{padding:18px 20px}.acc-inner>div{padding:0 20px 22px}}
 
 /* ---------- projetos ---------- */
-.featured{display:grid;grid-template-columns:1.35fr 1fr;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface)}
+.featured{--p:var(--accent);display:grid;grid-template-columns:1.35fr 1fr;border:1px solid color-mix(in srgb,var(--p) 50%,var(--line));border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:0 34px 100px -46px color-mix(in srgb,var(--p) 75%,transparent),0 0 60px -30px color-mix(in srgb,var(--p) 40%,transparent)}
+html.js .featured[data-reveal]{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),box-shadow .6s ease,border-color .6s ease;transition-delay:var(--d,0ms),var(--d,0ms),0ms,0ms}
 .cover{position:relative;overflow:hidden;background:#06122C}
 .cover svg,.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .featured .cover{min-height:460px}
@@ -261,7 +271,7 @@ section.block{padding:112px 0;border-bottom:1px solid var(--line)}
 .thumb{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);cursor:pointer;text-align:left;padding:0;color:inherit;font:inherit;transition:border-color .2s}
 .thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--tp);opacity:0;transition:opacity .2s}
 .thumb:hover{border-color:color-mix(in srgb,var(--text) 35%,var(--line))}
-.thumb[aria-current="true"]{border-color:var(--text)}
+.thumb[aria-current="true"]{border-color:color-mix(in srgb,var(--tp) 70%,var(--text));box-shadow:0 16px 40px -22px var(--tp)}
 .thumb[aria-current="true"]::after{opacity:1}
 .thumb .cover{aspect-ratio:1600/1195}
 .thumb .t{padding:12px 14px 14px}
@@ -435,7 +445,7 @@ main{overflow-x:clip}
         <p class="about-intro" data-i18n="about.intro">Sou Ismael, Head de Design e Diretor de Arte. Lidero equipes criativas, coloco a gamificação no centro da estratégia e uso IA e automação para que o time gaste energia criando, e não repetindo.</p>
       </div>
     </div>
-    <ul class="stats" id="stats" data-stagger="left"><li><strong>+20</strong><span>pessoas já passaram pela minha liderança</span></li><li><strong>2</strong><span>marcas nacionais de iGaming lideradas simultaneamente</span></li><li><strong>1</strong><span>marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais</span></li><li><strong>+70</strong><span>campanhas, torneios e promoções</span></li></ul>
+    <ul class="stats" id="stats" data-stagger="left"><li><strong>+20</strong><span>pessoas já passaram pela minha liderança</span></li><li><strong>2</strong><span>marcas nacionais de iGaming lideradas simultaneamente</span></li><li><strong>1</strong><span>marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais</span></li><li><strong>+100</strong><span>campanhas temáticas, torneios e promoções para as marcas</span></li></ul>
     <div class="journey">
       <div class="journey-head" data-reveal="left">
         <h3 data-i18n="about.jTitle">Como cheguei até aqui</h3>
@@ -516,7 +526,7 @@ main{overflow-x:clip}
       <h2 data-i18n="proj.title">Trabalhos selecionados</h2>
       <p class="sub" data-i18n="proj.sub">Marcas de iGaming no Brasil e na Costa Rica e dois projetos próprios.</p>
     </div>
-    <article class="featured" aria-live="polite" data-reveal="left" style="--d:120ms">
+    <article class="featured" aria-live="polite" data-reveal="left" style="--d: 120ms; --p: #FF3B4E;">
       <div class="cover" id="fCover"><img data-parallax="-0.06" src="assets/img/4play.webp" alt="Plataforma 4Play exibida em monitor e smartphone em um setup gamer com luz vermelha" width="1600" height="1195" loading="lazy" decoding="async"></div>
       <div class="f-info">
         <p class="f-brand" id="fBrand">4Play</p>
@@ -592,7 +602,7 @@ const I18N = {
     "about.eyebrow":"Sobre mim","about.caption":"Head de Design",
     "about.title":"Jogos, história e design sempre jogaram no mesmo time.",
     "about.intro":"Sou Ismael, Head de Design e Diretor de Arte. Lidero equipes criativas, coloco a gamificação no centro da estratégia e uso IA e automação para que o time gaste energia criando, e não repetindo.",
-    "stats":[["Liderança","+20","pessoas já passaram pela minha liderança"],["Brasil","2","marcas nacionais de iGaming lideradas simultaneamente"],["Internacional","1","marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais"],["Entregas","+70","campanhas, torneios e promoções"]],
+    "stats":[["Liderança","+20","pessoas já passaram pela minha liderança"],["Brasil","2","marcas nacionais de iGaming lideradas simultaneamente"],["Internacional","1","marca de iGaming na Costa Rica. Designer Sênior responsável por toda a produção de comunicação e redes sociais"],["Entregas","+100","campanhas temáticas, torneios e promoções para as marcas"]],
     "skip":"Pular para o conteúdo","contact.cta":"Enviar e-mail",
     "about.jTitle":"Como cheguei até aqui",
     "about.jSub":"Uma jornada em 7 fases, de um ferro de solda à liderança de design. Desbloqueie uma fase por vez.",
@@ -624,7 +634,7 @@ const I18N = {
     "about.eyebrow":"About me","about.caption":"Head of Design",
     "about.title":"Games, history and design have always played on the same team.",
     "about.intro":"I'm Ismael, Head of Design and Art Director. I lead creative teams, put gamification at the center of strategy and use AI and automation so the team spends its energy creating, not repeating.",
-    "stats":[["Leadership","+20","people have worked under my leadership"],["Brazil","2","national iGaming brands led simultaneously"],["International","1","iGaming brand in Costa Rica. Senior Designer in charge of all communication and social media production"],["Delivery","+70","campaigns, tournaments and promotions"]],
+    "stats":[["Leadership","+20","people have worked under my leadership"],["Brazil","2","national iGaming brands led simultaneously"],["International","1","iGaming brand in Costa Rica. Senior Designer in charge of all communication and social media production"],["Delivery","+100","themed campaigns, tournaments and promotions for the brands"]],
     "skip":"Skip to content","contact.cta":"Send an email",
     "about.jTitle":"How I got here",
     "about.jSub":"A journey in 7 levels, from a soldering iron to design leadership. Unlock one level at a time.",
@@ -929,6 +939,7 @@ function render(){
 function show(i,scroll){
   current = (i+PROJECTS.length)%PROJECTS.length;
   const p = PROJECTS[current];
+  $(".featured").style.setProperty("--p", p.color);
   $("#fCover").innerHTML = coverHTML(p);
   $("#fBrand").textContent = nameOf(p);
   $("#fTitle").textContent = p.title[lang];
