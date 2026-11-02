@@ -267,7 +267,7 @@ html.js .featured[data-reveal]{transition:opacity .8s cubic-bezier(.2,.7,.2,1),t
 .arrow{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;display:grid;place-items:center;transition:border-color .2s}
 .arrow:hover{border-color:var(--text)}
 .arrow svg{width:18px;height:18px}
-.thumbs{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.thumbs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .thumb{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);cursor:pointer;text-align:left;padding:0;color:inherit;font:inherit;transition:border-color .2s}
 .thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--tp);opacity:0;transition:opacity .2s}
 .thumb:hover{border-color:color-mix(in srgb,var(--text) 35%,var(--line))}
@@ -524,7 +524,7 @@ main{overflow-x:clip}
     <div class="sec-head" data-reveal="left">
       <p class="sec-label" data-i18n="proj.label">Projetos</p>
       <h2 data-i18n="proj.title">Trabalhos selecionados</h2>
-      <p class="sub" data-i18n="proj.sub">Marcas de iGaming no Brasil e na Costa Rica e dois projetos próprios.</p>
+      <p class="sub" data-i18n="proj.sub">Marcas de iGaming no Brasil e na Costa Rica, identidade de marca e projetos próprios.</p>
     </div>
     <article class="featured" aria-live="polite" data-reveal="left" style="--d: 120ms; --p: #FF3B4E;">
       <div class="cover" id="fCover"><img src="assets/img/4play.webp" alt="Plataforma 4Play exibida em monitor e smartphone em um setup gamer com luz vermelha" width="1600" height="1195" loading="lazy" decoding="async"></div>
@@ -539,13 +539,13 @@ main{overflow-x:clip}
           </button>
           <div class="car-ctrl">
             <button class="arrow" id="prev" type="button" data-i18n-aria="aria.prev" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 6-6 6 6 6"></path></svg></button>
-            <span class="count" id="count">01 / 04</span>
+            <span class="count" id="count">01 / 06</span>
             <button class="arrow" id="next" type="button" data-i18n-aria="aria.next" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></button>
           </div>
         </div>
       </div>
     </article>
-    <div class="thumbs" id="thumbs" data-stagger="left"><button class="thumb" type="button" data-i="0" aria-current="true" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>4Play</strong><span>iGaming, Brasil e Costa Rica</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Pagol</strong><span>iGaming, Brasil</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Ferramenta própria</span></div></button><button class="thumb" type="button" data-i="3" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Produto próprio</span></div></button></div>
+    <div class="thumbs" id="thumbs" data-stagger="left"><button class="thumb" type="button" data-i="0" aria-current="true" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>4Play</strong><span>iGaming, Brasil e Costa Rica</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Pagol</strong><span>iGaming, Brasil</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#3DB8D6"><div class="cover"><img src="assets/img/alumya-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Alumya</strong><span>Identidade visual</span></div></button><button class="thumb" type="button" data-i="3" aria-current="false" style="--tp:#C04A2E"><div class="cover"><img src="assets/img/ponto-de-ruptura-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Ponto de Ruptura</strong><span>Jogo educativo</span></div></button><button class="thumb" type="button" data-i="4" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Ferramenta própria</span></div></button><button class="thumb" type="button" data-i="5" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Produto próprio</span></div></button></div>
   </div>
 </section>
 
@@ -662,7 +662,7 @@ Object.assign(I18N.pt,{
   "hero.cta2":"Baixar currículo (PDF)",
   "about.label":"Sobre","about.caption":"Ismael Oliveira, em Teresina (PI).",
   "svc.label":"Serviços","svc.title":"O que eu faço","svc.sub":"Da direção de arte à automação dos processos. Abra cada área para ver o que ela envolve.","svc.kw":"Palavras-chave:",
-  "proj.label":"Projetos","proj.title":"Trabalhos selecionados","proj.sub":"Marcas de iGaming no Brasil e na Costa Rica e dois projetos próprios.","proj.see":"Ver case completo",
+  "proj.label":"Projetos","proj.title":"Trabalhos selecionados","proj.sub":"Marcas de iGaming no Brasil e na Costa Rica, identidade de marca e projetos próprios.","proj.see":"Ver case completo",
   "contact.label":"Contato","contact.title":"Vamos conversar.","contact.sub":"Para vagas, projetos ou uma conversa sobre design, o caminho mais rápido é o e-mail.",
   "footer":"Voltar ao topo ↑","story.done":"Jornada completa",
   "aria.nav":"Navegação principal","aria.lang":"Idioma","aria.menu":"Abrir menu","aria.prev":"Projeto anterior","aria.next":"Próximo projeto","aria.close":"Fechar"
@@ -675,7 +675,7 @@ Object.assign(I18N.en,{
   "hero.cta2":"Download résumé (PDF, PT-BR)",
   "about.label":"About","about.caption":"Ismael Oliveira, in Teresina, Brazil.",
   "svc.label":"Services","svc.title":"What I do","svc.sub":"From art direction to process automation. Open each area to see what it covers.","svc.kw":"Keywords:",
-  "proj.label":"Projects","proj.title":"Selected work","proj.sub":"iGaming brands in Brazil and Costa Rica, plus two projects of my own.","proj.see":"View full case",
+  "proj.label":"Projects","proj.title":"Selected work","proj.sub":"iGaming brands in Brazil and Costa Rica, brand identity and projects of my own.","proj.see":"View full case",
   "contact.label":"Contact","contact.title":"Let’s talk.","contact.sub":"For roles, projects or a conversation about design, email is the fastest way to reach me.",
   "footer":"Back to top ↑","story.done":"Journey complete",
   "aria.nav":"Main navigation","aria.lang":"Language","aria.menu":"Open menu","aria.prev":"Previous project","aria.next":"Next project","aria.close":"Close"
@@ -836,6 +836,29 @@ const PROJECTS = [
    did:{pt:["Leitura de oportunidades nos funis junto ao CRM, transformando briefing em peças certeiras.","Identidade própria, distinta da 4Play, aplicada com consistência em todos os canais.","Organização das demandas de todas as marcas na mesma esteira, mantendo ritmo e prazos.","Treinamento e mentoria do time, além de peças animadas e vídeos para campanhas e redes sociais."],
         en:["Reading funnel opportunities with CRM, turning briefs into on-target assets.","Its own identity, distinct from 4Play, applied consistently across every channel.","Running every brand's demands through the same pipeline while keeping pace and deadlines.","Training and mentoring the team, plus motion pieces and videos for campaigns and social media."]},
    res:{pt:"Duas marcas com identidades distintas, entregues pelo mesmo time sem perder qualidade nem consistência.",en:"Two brands with distinct identities, delivered by the same team without losing quality or consistency."}},
+  {id:"alumya", name:"Alumya", color:"#3DB8D6", image:"assets/img/alumya.webp", thumb:"assets/img/alumya-thumb.webp",
+   alt:{pt:"Monitor com o painel da Alumya, notebook com o ícone da marca, caneca e caderno com o chevron gravado",en:"Monitor showing the Alumya dashboard, laptop with the brand icon, mug and notebook with the embossed chevron"},
+   pill:{pt:"Identidade visual · Branding · IA",en:"Visual identity · Branding · AI"},
+   title:{pt:"Uma marca para quem leva o processo para cima",en:"A brand for taking the process upward"},
+   desc:{pt:"Identidade visual completa da Alumya, empresa de automação e tecnologia com IA: símbolo, logotipo em duas versões, ícone de app, paleta e aplicações.",en:"Full visual identity for Alumya, an AI automation and technology company: symbol, logotype in two versions, app icon, palette and applications."},
+   tags:{pt:["Identidade visual","Logotipo","Design system","Ícone de app"],en:["Visual identity","Logotype","Design system","App icon"]},
+   role:{pt:["Criador","Conceito, símbolo, logotipo e aplicações."],en:["Creator","Concept, symbol, logotype and applications."]},
+   ctx:{pt:"Uma empresa de automação com IA precisava de uma marca que passasse confiança técnica sem cair nos clichês do setor: robô, cérebro brilhando, placa de circuito.",en:"An AI automation company needed a brand that conveys technical trust without the usual sector cliches: robots, glowing brains, circuit boards."},
+   did:{pt:["Construí o símbolo a partir de um chevron ascendente, com três leituras: seta de progresso, camada de sistema e direção.","Criei o degradê que sobe do azul profundo ao verde-menta, como a luz de um sistema ligando.","Encaixei o símbolo acima da letra U, dentro do próprio nome, para marca e símbolo nunca andarem separados.","Entreguei logotipo em versão clara e escura, ícone de app testado em tamanhos pequenos, paleta e aplicações."],
+        en:["Built the symbol from an ascending chevron with three readings: progress arrow, system layer and direction.","Created the gradient rising from deep blue to mint green, like a system powering on.","Placed the symbol above the letter U, inside the name itself, so mark and symbol always travel together.","Delivered light and dark logotype versions, an app icon tested at small sizes, palette and applications."]},
+   res:{pt:"Uma marca calma e técnica, que funciona do letreiro da recepção ao favicon, com regras claras de cor, tipografia e aplicação.",en:"A calm, technical brand that works from a reception sign down to a favicon, with clear rules for color, type and application."}},
+  {id:"ruptura", name:"Ponto de Ruptura", color:"#C04A2E", image:"assets/img/ponto-de-ruptura.webp", thumb:"assets/img/ponto-de-ruptura-thumb.webp",
+   alt:{pt:"Três pastas de arquivo antigas sobre uma mesa de madeira, sob a luz de um abajur verde, a do centro carimbada Ponto de Ruptura",en:"Three old file folders on a wooden desk under a green banker lamp, the middle one stamped Ponto de Ruptura"},
+   pill:{pt:"Game design · Direção de arte · Educação",en:"Game design · Art direction · Education"},
+   title:{pt:"Um jogo em que você valida a história, documento por documento",en:"A game where you validate history, document by document"},
+   desc:{pt:"Jogo narrativo sobre a Segunda Guerra para a sala de aula: o acervo do século XX foi adulterado e o jogador, como Arquivista, precisa reconhecer qual documento é autêntico.",en:"A narrative game about World War II for the classroom: the 20th-century archive has been tampered with and the player, as the Archivist, must spot which document is authentic."},
+   tags:{pt:["Game design","Narrativa","Gamificação","Acessibilidade"],en:["Game design","Narrative","Gamification","Accessibility"]},
+   role:{pt:["Criador","Conceito, roteiro, direção de arte e código."],en:["Creator","Concept, script, art direction and code."]},
+   ctx:{pt:"Como fazer um jogo em que o nazismo e o stalinismo podem vencer, sem nunca colocar o aluno no papel de quem os escolhe? Esse era o problema de design a resolver.",en:"How do you build a game where Nazism and Stalinism can win, without ever putting the student in the role of choosing them? That was the design problem to solve."},
+   did:{pt:["Criei o papel do Arquivista: o jogador nunca escolhe um lado, apenas reconhece se um documento é autêntico ou falso.","Desenhei a mecânica de três pastas físicas sobre a mesa, que podem ser comparadas quantas vezes quiser antes de confirmar.","Estruturei 15 decisões reais em 5 atos, de Munique em 1938 à queda do Muro, cada alternativa apoiada em algo de fato cogitado na época.","Fiz o erro ensinar: depois de cada escolha, um card mostra o que realmente aconteceu, com data e fonte.","Desenhei 14 insígnias e o Fio do Tempo, que mostra o quanto o acervo diverge da história real sem revelar o final."],
+        en:["Created the Archivist role: the player never picks a side, only judges whether a document is authentic or forged.","Designed the mechanic of three physical folders on the desk, comparable as many times as needed before confirming.","Structured 15 real decisions across 5 acts, from Munich in 1938 to the fall of the Wall, each alternative grounded in something actually considered at the time.","Made failure teach: after every choice, a card shows what really happened, with date and source.","Designed 14 badges and the Time Thread, showing how far the archive diverges from real history without revealing the ending."]},
+   res:{pt:["<b>Rigor:</b> nenhum caminho deixa o aluno sem aprender, e o Holocausto nunca é amenizado em nenhuma linha da história.","<b>Sala de aula:</b> cobre Segunda Guerra, totalitarismos e Guerra Fria da BNCC, em uma partida de cerca de 20 minutos.","<b>Acesso:</b> roda no navegador, no celular ou no computador, sem instalação."],
+        en:["<b>Rigor:</b> no path leaves the student without learning, and the Holocaust is never softened in any timeline.","<b>Classroom:</b> covers World War II, totalitarianism and the Cold War in a 20-minute session.","<b>Access:</b> runs in the browser, on phone or desktop, with no install."]}},
   {id:"auto", name:{pt:"Automação de design",en:"Design automation"}, color:"#7B7BFF", image:"assets/img/automacao.webp", thumb:"assets/img/automacao-thumb.webp",
    alt:{pt:"Diagrama de automação: um template padrão passa por IA e regras e vira banner, pop-up, inbox e push",en:"Automation diagram: a standard template goes through AI and rules and becomes banner, pop-up, inbox and push"},
    meta:{pt:"Projeto próprio · Ferramenta",en:"Own project · Tool"},
@@ -869,10 +892,14 @@ const FACTS = {
            en:[["Role","Head of Design and Art Director"],["Market","Brazil"],["Period","2025–2026"],["Focus","CRM, multichannel communication and motion"]]},
   "auto":{pt:[["Papel","Criador"],["Tipo","Ferramenta própria"],["Base","Template padrão, IA e regras visuais"],["Formatos","Banner, pop-up, inbox e push"]],
           en:[["Role","Creator"],["Type","Own tool"],["Base","Standard template, AI and visual rules"],["Formats","Banner, pop-up, inbox and push"]]},
+  "alumya":{pt:[["Papel","Direção de arte e identidade visual"],["Tipo","Identidade de marca"],["Setor","Automação e IA para empresas"],["Entregas","Logotipo, ícone, paleta e aplicações"]],
+            en:[["Role","Art direction and visual identity"],["Type","Brand identity"],["Sector","AI automation for business"],["Deliverables","Logotype, icon, palette and applications"]]},
+  "ruptura":{pt:[["Papel","Criador: conceito, roteiro, arte e código"],["Tipo","Jogo narrativo educativo"],["Público","9º ano e Ensino Médio · BNCC"],["Formato","Navegador, cerca de 20 minutos"]],
+             en:[["Role","Creator: concept, script, art and code"],["Type","Narrative educational game"],["Audience","Middle and high school"],["Format","Browser, about 20 minutes"]]},
   "fin":{pt:[["Papel","Criador"],["Tipo","Produto próprio"],["Foco","UX/UI, dados e projeções"],["Recursos","Contas, categorias, projeção e alertas"]],
          en:[["Role","Creator"],["Type","Own product"],["Focus","UX/UI, data and forecasts"],["Features","Accounts, categories, forecast and alerts"]]}
 };
-const META = {"4play":{pt:"iGaming, Brasil e Costa Rica",en:"iGaming, Brazil and Costa Rica"},"pagol":{pt:"iGaming, Brasil",en:"iGaming, Brazil"},"auto":{pt:"Ferramenta própria",en:"Own tool"},"fin":{pt:"Produto próprio",en:"Own product"}};
+const META = {"alumya":{pt:"Identidade visual",en:"Visual identity"},"ruptura":{pt:"Jogo educativo",en:"Educational game"},"4play":{pt:"iGaming, Brasil e Costa Rica",en:"iGaming, Brazil and Costa Rica"},"pagol":{pt:"iGaming, Brasil",en:"iGaming, Brazil"},"auto":{pt:"Ferramenta própria",en:"Own tool"},"fin":{pt:"Produto próprio",en:"Own product"}};
 PROJECTS.forEach(p=>{ p.facts=FACTS[p.id]; p.meta=META[p.id]; });
 
 /* ---------- capas geradas (substituídas quando houver "image") ---------- */
