@@ -1,2 +1,8 @@
-/assets/*
-  Cache-Control: public, max-age=604800
+/assets/img/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/cv/*
+  Cache-Control: public, max-age=600, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
