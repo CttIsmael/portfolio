@@ -254,7 +254,7 @@ html.js .featured[data-reveal]{transition:opacity .8s cubic-bezier(.2,.7,.2,1),t
 .featured .cover img{animation:fade .4s ease}
 @keyframes fade{from{opacity:.25}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.featured .cover img{animation:none}}
-.f-info{padding:28px 30px 22px;display:flex;flex-direction:column;gap:10px;align-self:stretch}
+.f-info{padding:24px 30px 20px;display:flex;flex-direction:column;gap:9px;align-self:stretch}
 .f-brand{margin:0;font-size:15px;font-weight:600;color:var(--muted)}
 .f-info h3{font-size:clamp(22px,2vw,28px);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin:0}
 .f-info .desc{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
@@ -267,7 +267,7 @@ html.js .featured[data-reveal]{transition:opacity .8s cubic-bezier(.2,.7,.2,1),t
 .arrow{width:42px;height:42px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;display:grid;place-items:center;transition:border-color .2s}
 .arrow:hover{border-color:var(--text)}
 .arrow svg{width:18px;height:18px}
-.thumbs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.thumbs{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .thumb{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);cursor:pointer;text-align:left;padding:0;color:inherit;font:inherit;transition:border-color .2s}
 .thumb::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--tp);opacity:0;transition:opacity .2s}
 .thumb:hover{border-color:color-mix(in srgb,var(--text) 35%,var(--line))}
@@ -284,6 +284,28 @@ html.js .featured[data-reveal]{transition:opacity .8s cubic-bezier(.2,.7,.2,1),t
   .thumbs{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:520px){.facts{grid-template-columns:1fr}}
+
+/* ---------- atalhos externos (Behance, jogo, sites) ---------- */
+.nav-behance{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;margin-right:6px;border:1px solid var(--line);border-radius:10px;color:var(--text);text-decoration:none;font:600 14px var(--font-body);transition:border-color .2s}
+.nav-behance:hover{border-color:var(--text)}
+.nav-behance svg{width:14px;height:14px;color:var(--accent-2)}
+.nav-links .li-ext{display:none}
+@media (max-width:860px){.nav-behance{display:none}.nav-links .li-ext{display:block}}
+.f-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:36px}
+.f-top .car-ctrl{gap:6px}
+.f-top .arrow{width:36px;height:36px;border-radius:9px}
+.f-top .arrow svg{width:16px;height:16px}
+.f-top .count{min-width:48px;font-size:13px}
+.f-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.f-actions .btn svg{width:16px;height:16px}
+.thumb-more{display:block;text-decoration:none}
+.thumb-more .cover{background:var(--surface-2);display:grid;place-items:center}
+.more-in{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--text);font-weight:600;font-size:15px;text-align:center;padding:0 12px}
+.more-in i{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-style:normal;transition:border-color .2s}
+.thumb-more .more-in svg{position:static;inset:auto;width:18px;height:18px;color:var(--accent-2)}
+.thumb-more:hover .more-in i{border-color:var(--text)}
+.dlg-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.dlg-links .btn svg{width:16px;height:16px}
 
 /* ---------- modal do case ---------- */
 dialog{border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--text);padding:0;width:min(760px,100% - 32px);max-height:88svh}
@@ -363,13 +385,15 @@ main{overflow-x:clip}
   <nav class="wrap nav" data-i18n-aria="aria.nav" aria-label="Navegação principal">
     <a href="#inicio" class="logo">Ismael Oliveira</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#inicio" data-i18n="nav.home">Página inicial</a></li>
+      <li><a href="#inicio" data-i18n="nav.home" aria-current="true">Página inicial</a></li>
       <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
       <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
-      <li><a href="#projetos" data-i18n="nav.projects" aria-current="true">Projetos</a></li>
+      <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
       <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+      <li class="li-ext"><a href="https://www.behance.net/cttismael" target="_blank" rel="noopener noreferrer">Behance ↗</a></li>
     </ul>
     <div class="nav-right">
+      <a class="nav-behance" href="https://www.behance.net/cttismael" target="_blank" rel="noopener noreferrer" data-i18n-aria="aria.behance" aria-label="Abrir o Behance em uma nova aba"><span>Behance</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
       <div class="lang" role="group" data-i18n-aria="aria.lang" aria-label="Idioma">
         <button type="button" data-lang="pt" lang="pt-BR" aria-label="Português" aria-pressed="true">PT</button><span class="sep" aria-hidden="true">/</span><button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
       </div>
@@ -393,6 +417,7 @@ main{overflow-x:clip}
         <a href="#projetos" class="btn btn-primary" data-i18n="hero.cta1">Ver projetos</a>
         <a href="assets/cv/Curriculo_Ismael_Oliveira.pdf" download="Curriculo_Ismael_Oliveira.pdf" class="text-link cv-link"><span data-i18n="hero.cta2">Baixar currículo (PDF)</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"></path></svg></a>
+        <a href="https://www.behance.net/cttismael" target="_blank" rel="noopener noreferrer" class="text-link"><span data-i18n="hero.behance">Ver no Behance</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
       </div>
     </div>
     </div>
@@ -526,26 +551,29 @@ main{overflow-x:clip}
       <h2 data-i18n="proj.title">Trabalhos selecionados</h2>
       <p class="sub" data-i18n="proj.sub">Campanhas de alto volume, identidade de marca e projetos próprios.</p>
     </div>
-    <article class="featured" aria-live="polite" data-reveal="left" style="--d: 120ms; --p: #FF3B4E;">
-      <div class="cover" id="fCover"><img src="assets/img/4play.webp" alt="Campanha da marca 4Play exibida em monitor e smartphone, com identidade vermelha" width="1600" height="1195" loading="lazy" decoding="async"></div>
+    <article class="featured" aria-live="polite" data-reveal="left" style="--d: 120ms; --p: #3DB8D6;">
+      <div class="cover" id="fCover"><img src="assets/img/alumya-capa.webp" alt="Capa da identidade da Alûmya: logo e o título Leve o seu processo para cima, ao lado de um monitor com o painel de automação, uma caneca e um caderno com o chevron da marca" width="1600" height="1195" loading="lazy" decoding="async"></div>
       <div class="f-info">
-        <p class="f-brand" id="fBrand">Campanhas multicanal</p>
-        <h3 id="fTitle">Campanhas temáticas em todos os canais, de ponta a ponta</h3>
-        <p class="desc" id="fDesc">Direção de arte de uma marca digital no Brasil e produção de comunicação e redes sociais na operação da Costa Rica: campanhas temáticas, programas de fidelidade e recompensas claros do desktop ao mobile.</p>
-        <dl class="facts" id="fFacts"><div><dt>Papel</dt><dd>Designer e, depois, Head de Design e Diretor de Arte</dd></div><div><dt>Marca</dt><dd>4Play · Lucky Gaming</dd></div><div><dt>Período</dt><dd>2025–2026</dd></div><div><dt>Foco</dt><dd>Direção de arte, mídia paga e CRM</dd></div></dl>
+        <div class="f-top"><p class="f-brand" id="fBrand">Alûmya</p><div class="car-ctrl">
+            <button class="arrow" id="prev" type="button" data-i18n-aria="aria.prev" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 6-6 6 6 6"></path></svg></button>
+            <span class="count" id="count">01 / 07</span>
+            <button class="arrow" id="next" type="button" data-i18n-aria="aria.next" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></button>
+          </div></div>
+        <h3 id="fTitle">Uma marca para quem leva o processo para cima</h3>
+        <p class="desc" id="fDesc">Identidade visual completa da Alûmya, empresa de automação e tecnologia com IA: símbolo, logotipo em duas versões, ícone de app, paleta e aplicações.</p>
+        <dl class="facts" id="fFacts"><div><dt>Papel</dt><dd>Direção de arte e identidade visual</dd></div><div><dt>Tipo</dt><dd>Identidade de marca</dd></div><div><dt>Setor</dt><dd>Automação e IA para empresas</dd></div><div><dt>Entregas</dt><dd>Logotipo, ícone, paleta e aplicações</dd></div></dl>
         <div class="f-foot">
-          <button class="link-btn" id="openCase" type="button"><span data-i18n="proj.see">Ver case completo</span>
+          <div class="f-actions">
+            <a class="btn btn-primary btn-sm" id="fExt" href="https://www.behance.net/gallery/257910451/Alumya-Identidade-Visual-para-Automacao-com-IA" target="_blank" rel="noopener noreferrer"><span>Ver no Behance</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+            <button class="link-btn" id="openCase" type="button"><span data-i18n="proj.see">Ver case completo</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg>
           </button>
-          <div class="car-ctrl">
-            <button class="arrow" id="prev" type="button" data-i18n-aria="aria.prev" aria-label="Projeto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m15 6-6 6 6 6"></path></svg></button>
-            <span class="count" id="count">04 / 06</span>
-            <button class="arrow" id="next" type="button" data-i18n-aria="aria.next" aria-label="Próximo projeto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg></button>
+            <a class="link-btn" id="fExt2" href="#" target="_blank" rel="noopener noreferrer" hidden=""><span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
           </div>
         </div>
       </div>
     </article>
-    <div class="thumbs" id="thumbs" data-stagger="left"><button class="thumb" type="button" data-i="0" aria-current="false" style="--tp:#3DB8D6"><div class="cover"><img src="assets/img/alumya-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Alumya</strong><span>Identidade visual</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Ferramenta própria</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#C04A2E"><div class="cover"><img src="assets/img/ponto-de-ruptura-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Ponto de Ruptura</strong><span>Jogo educativo</span></div></button><button class="thumb" type="button" data-i="3" aria-current="true" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Campanhas multicanal</strong><span>Marca digital · Brasil e Costa Rica</span></div></button><button class="thumb" type="button" data-i="4" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>CRM e segmentação</strong><span>Marca digital · Brasil</span></div></button><button class="thumb" type="button" data-i="5" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Produto próprio</span></div></button></div>
+    <div class="thumbs" id="thumbs" data-stagger="left"><button class="thumb" type="button" data-i="0" aria-current="true" style="--tp:#3DB8D6"><div class="cover"><img src="assets/img/alumya-capa-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Alûmya</strong><span>Identidade visual</span></div></button><button class="thumb" type="button" data-i="1" aria-current="false" style="--tp:#7B7BFF"><div class="cover"><img src="assets/img/automacao-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Automação de design</strong><span>Ferramenta própria</span></div></button><button class="thumb" type="button" data-i="2" aria-current="false" style="--tp:#C04A2E"><div class="cover"><img src="assets/img/ponto-de-ruptura-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Ponto de Ruptura</strong><span>Jogo educativo</span></div></button><button class="thumb" type="button" data-i="3" aria-current="false" style="--tp:#E8A33D"><div class="cover"><img src="assets/img/kayo-motion-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Motion · KAY/O</strong><span>Motion design</span></div></button><button class="thumb" type="button" data-i="4" aria-current="false" style="--tp:#FF3B4E"><div class="cover"><img src="assets/img/4play-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Campanhas multicanal</strong><span>Marca digital · Brasil e Costa Rica</span></div></button><button class="thumb" type="button" data-i="5" aria-current="false" style="--tp:#1FD68B"><div class="cover"><img src="assets/img/pagol-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>CRM e segmentação</strong><span>Marca digital · Brasil</span></div></button><button class="thumb" type="button" data-i="6" aria-current="false" style="--tp:#4FDDB0"><div class="cover"><img src="assets/img/meu-financeiro-thumb.webp" alt="" width="720" height="538" loading="lazy" decoding="async"></div><div class="t"><strong>Meu Financeiro</strong><span>Produto próprio</span></div></button><a class="thumb thumb-more" href="https://www.behance.net/cttismael" target="_blank" rel="noopener noreferrer" aria-label="Ver todos os projetos no Behance (abre em nova aba)"><div class="cover"><span class="more-in"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></i>Ver todos os projetos</span></div><div class="t"><strong>Mais trabalhos</strong><span>Projetos e motions</span></div></a></div>
   </div>
 </section>
 
@@ -656,6 +684,7 @@ const I18N = {
 };
 Object.assign(I18N.pt,{
   "theme.toLight":"Ativar modo claro","theme.toDark":"Ativar modo noturno",
+  "aria.behance":"Abrir o Behance em uma nova aba","hero.behance":"Ver no Behance","proj.more":"Ver todos os projetos","proj.moreTitle":"Mais trabalhos","proj.moreSub":"Projetos e motions","aria.moreBehance":"Ver todos os projetos no Behance (abre em nova aba)",
   "hero.kicker":"Ismael Oliveira · Teresina, Brasil",
   "hero.title":"Head de Design e Diretor de Arte para campanhas, marcas e produtos digitais.",
   "hero.lead":"Em 10 meses, fui de designer a Head de Design e Diretor de Arte, liderando a operação criativa de duas marcas digitais em paralelo, com times de até 12 pessoas e uma operação internacional. No dia a dia: mídia paga, CRM, motion e automação com IA.",
@@ -669,6 +698,7 @@ Object.assign(I18N.pt,{
 });
 Object.assign(I18N.en,{
   "theme.toLight":"Switch to light mode","theme.toDark":"Switch to dark mode",
+  "aria.behance":"Open Behance in a new tab","hero.behance":"See my Behance","proj.more":"See all projects","proj.moreTitle":"More work","proj.moreSub":"Projects and motion","aria.moreBehance":"See all projects on Behance (opens in a new tab)",
   "hero.kicker":"Ismael Oliveira · Teresina, Brazil",
   "hero.title":"Head of Design and Art Director for digital campaigns, brands and products.",
   "hero.lead":"In 10 months I went from designer to Head of Design and Art Director, leading the creative operation of two digital brands in parallel, with teams of up to 12 people and an international operation. Day to day: paid media, CRM, motion and AI automation.",
@@ -816,8 +846,8 @@ const PROJECTS = [
    alt:{pt:"Campanha da marca 4Play exibida em monitor e smartphone, com identidade vermelha",en:"4Play campaign shown on a monitor and smartphone, with its red identity"},
    meta:{pt:"Plataforma digital · Brasil e Costa Rica · 2025 — 2026",en:"Digital platform · Brazil and Costa Rica · 2025 — 2026"},
    pill:{pt:"Direção de arte · Campanhas · Internacional",en:"Art direction · Campaigns · International"},
-   title:{pt:"Campanhas temáticas em todos os canais, de ponta a ponta",en:"Themed campaigns across every channel, end to end"},
-   desc:{pt:"Direção de arte de uma marca digital no Brasil e produção de comunicação e redes sociais na operação da Costa Rica: campanhas temáticas, programas de fidelidade e recompensas claros do desktop ao mobile.",en:"Art direction for a digital brand in Brazil and communication and social media production for the Costa Rica operation: themed campaigns, loyalty programs and rewards made clear from desktop to mobile."},
+   title:{pt:"Campanhas temáticas em todos os canais",en:"Themed campaigns across every channel"},
+   desc:{pt:"Direção de arte de uma marca digital no Brasil e comunicação e redes sociais na operação da Costa Rica: campanhas temáticas, fidelidade e recompensas, do desktop ao mobile.",en:"Art direction for a digital brand in Brazil and communication and social media for the Costa Rica operation: themed campaigns, loyalty and rewards, from desktop to mobile."},
    tags:{pt:["Direção de arte","Campanhas","Fidelidade","Português e espanhol"],en:["Art direction","Campaigns","Loyalty","Portuguese & Spanish"]},
    role:{pt:["Head & DA","Designer e, depois, Head e Diretor de Arte; atuação também na Costa Rica."],en:["Head & AD","Designer, then Head and Art Director; also worked on Costa Rica."]},
    ctx:{pt:"Uma plataforma digital de entretenimento presente em dois mercados, Brasil e Costa Rica, que precisava de campanhas constantes, segmentadas por público e espalhadas por vários canais, sem perder consistência visual nem ritmo de entrega.",en:"A digital entertainment platform present in two markets, Brazil and Costa Rica, that needed constant campaigns, segmented by audience and spread across many channels, without losing visual consistency or delivery pace."},
@@ -836,11 +866,11 @@ const PROJECTS = [
    did:{pt:["Leitura de oportunidades nos funis junto ao CRM, transformando briefing em peças certeiras.","Identidade própria, distinta da 4Play, aplicada com consistência em todos os canais.","Organização das demandas de todas as marcas na mesma esteira, mantendo ritmo e prazos.","Treinamento e mentoria do time, além de peças animadas e vídeos para campanhas e redes sociais."],
         en:["Reading funnel opportunities with CRM, turning briefs into on-target assets.","Its own identity, distinct from 4Play, applied consistently across every channel.","Running every brand's demands through the same pipeline while keeping pace and deadlines.","Training and mentoring the team, plus motion pieces and videos for campaigns and social media."]},
    res:{pt:"Duas marcas com identidades distintas, entregues pelo mesmo time sem perder qualidade nem consistência.",en:"Two brands with distinct identities, delivered by the same team without losing quality or consistency."}},
-  {id:"alumya", name:"Alumya", color:"#3DB8D6", image:"assets/img/alumya.webp", thumb:"assets/img/alumya-thumb.webp",
-   alt:{pt:"Monitor com o painel da Alumya, notebook com o ícone da marca, caneca e caderno com o chevron gravado",en:"Monitor showing the Alumya dashboard, laptop with the brand icon, mug and notebook with the embossed chevron"},
+  {id:"alumya", name:"Alûmya", color:"#3DB8D6", image:"assets/img/alumya-capa.webp", thumb:"assets/img/alumya-capa-thumb.webp",
+   alt:{pt:"Capa da identidade da Alûmya: logo e o título Leve o seu processo para cima, ao lado de um monitor com o painel de automação, uma caneca e um caderno com o chevron da marca",en:"Alûmya identity cover: logo and the headline Leve o seu processo para cima, beside a monitor with the automation dashboard, a mug and a notebook with the brand chevron"},
    pill:{pt:"Identidade visual · Branding · IA",en:"Visual identity · Branding · AI"},
    title:{pt:"Uma marca para quem leva o processo para cima",en:"A brand for taking the process upward"},
-   desc:{pt:"Identidade visual completa da Alumya, empresa de automação e tecnologia com IA: símbolo, logotipo em duas versões, ícone de app, paleta e aplicações.",en:"Full visual identity for Alumya, an AI automation and technology company: symbol, logotype in two versions, app icon, palette and applications."},
+   desc:{pt:"Identidade visual completa da Alûmya, empresa de automação e tecnologia com IA: símbolo, logotipo em duas versões, ícone de app, paleta e aplicações.",en:"Full visual identity for Alûmya, an AI automation and technology company: symbol, logotype in two versions, app icon, palette and applications."},
    tags:{pt:["Identidade visual","Logotipo","Design system","Ícone de app"],en:["Visual identity","Logotype","Design system","App icon"]},
    role:{pt:["Criador","Conceito, símbolo, logotipo e aplicações."],en:["Creator","Concept, symbol, logotype and applications."]},
    ctx:{pt:"Uma empresa de automação com IA precisava de uma marca que passasse confiança técnica sem cair nos clichês do setor: robô, cérebro brilhando, placa de circuito.",en:"An AI automation company needed a brand that conveys technical trust without the usual sector cliches: robots, glowing brains, circuit boards."},
@@ -851,7 +881,7 @@ const PROJECTS = [
    alt:{pt:"Três pastas de arquivo antigas sobre uma mesa de madeira, sob a luz de um abajur verde, a do centro carimbada Ponto de Ruptura",en:"Three old file folders on a wooden desk under a green banker lamp, the middle one stamped Ponto de Ruptura"},
    pill:{pt:"Game design · Direção de arte · Educação",en:"Game design · Art direction · Education"},
    title:{pt:"Um jogo em que você valida a história, documento por documento",en:"A game where you validate history, document by document"},
-   desc:{pt:"Jogo narrativo sobre a Segunda Guerra para a sala de aula: o acervo do século XX foi adulterado e o jogador, como Arquivista, precisa reconhecer qual documento é autêntico.",en:"A narrative game about World War II for the classroom: the 20th-century archive has been tampered with and the player, as the Archivist, must spot which document is authentic."},
+   desc:{pt:"Jogo narrativo sobre a Segunda Guerra para a sala de aula: como Arquivista, o jogador descobre qual documento é autêntico.",en:"A narrative game about World War II for the classroom: as the Archivist, the player finds out which document is authentic."},
    tags:{pt:["Game design","Narrativa","Gamificação","Acessibilidade"],en:["Game design","Narrative","Gamification","Accessibility"]},
    role:{pt:["Criador","Conceito, roteiro, direção de arte e código."],en:["Creator","Concept, script, art direction and code."]},
    ctx:{pt:"Como fazer um jogo em que o nazismo e o stalinismo podem vencer, sem nunca colocar o aluno no papel de quem os escolhe? Esse era o problema de design a resolver.",en:"How do you build a game where Nazism and Stalinism can win, without ever putting the student in the role of choosing them? That was the design problem to solve."},
@@ -885,7 +915,15 @@ const PROJECTS = [
    res:{pt:"Mais controle sobre os gastos e decisões de economia baseadas em números, não em achismo.",en:"More control over spending and saving decisions based on numbers, not guesswork."}}
 ];
 
-const __ORDER=["alumya","auto","ruptura","4play","pagol","fin"];
+PROJECTS.push({id:"kayo", simple:true, name:{pt:"Motion · KAY/O",en:"Motion · KAY/O"}, color:"#E8A33D", image:"assets/img/kayo-motion.webp", thumb:"assets/img/kayo-motion-thumb.webp",
+   alt:{pt:"Capa do projeto de motion com o personagem KAY/O: um robô de armadura em uma linha de montagem futurista, com o título KAY/O em movimento",en:"Cover of the KAY/O motion project: an armored robot in a futuristic assembly line, with the title KAY/O in motion"},
+   pill:{pt:"Motion design · Animação · Personagem",en:"Motion design · Animation · Character"},
+   title:{pt:"Motion com o personagem KAY/O",en:"Motion piece with KAY/O"},
+   desc:{pt:"Peça de motion design com o personagem KAY/O, de VALORANT. O vídeo completo está no meu Behance. Personagem e jogo pertencem à Riot Games.",en:"A motion design piece with KAY/O, from VALORANT. The full video is on my Behance. Character and game belong to Riot Games."},
+   tags:{pt:["Motion design","Animação"],en:["Motion design","Animation"]},
+   role:{pt:["Motion","Animação e edição."],en:["Motion","Animation and editing."]},
+   ctx:{pt:"",en:""}, did:{pt:[],en:[]}, res:{pt:"",en:""}});
+const __ORDER=["alumya","auto","ruptura","kayo","4play","pagol","fin"];
 PROJECTS.sort((x,y)=>__ORDER.indexOf(x.id)-__ORDER.indexOf(y.id));
 
 const FACTS = {
@@ -897,13 +935,26 @@ const FACTS = {
           en:[["Role","Creator"],["Type","Own tool"],["Base","Standard template, AI and visual rules"],["Formats","Banner, pop-up, inbox and push"]]},
   "alumya":{pt:[["Papel","Direção de arte e identidade visual"],["Tipo","Identidade de marca"],["Setor","Automação e IA para empresas"],["Entregas","Logotipo, ícone, paleta e aplicações"]],
             en:[["Role","Art direction and visual identity"],["Type","Brand identity"],["Sector","AI automation for business"],["Deliverables","Logotype, icon, palette and applications"]]},
-  "ruptura":{pt:[["Papel","Criador: conceito, roteiro, arte e código"],["Tipo","Jogo narrativo educativo"],["Público","9º ano e Ensino Médio · BNCC"],["Formato","Navegador, cerca de 20 minutos"]],
-             en:[["Role","Creator: concept, script, art and code"],["Type","Narrative educational game"],["Audience","Middle and high school"],["Format","Browser, about 20 minutes"]]},
+  "ruptura":{pt:[["Papel","Criador, do conceito ao código"],["Tipo","Jogo narrativo educativo"],["Público","9º ano e Ensino Médio · BNCC"],["Formato","Navegador, ~20 minutos"]],
+             en:[["Role","Creator, from concept to code"],["Type","Narrative educational game"],["Audience","Middle and high school"],["Format","Browser, ~20 minutes"]]},
   "fin":{pt:[["Papel","Criador"],["Tipo","Produto próprio"],["Foco","UX/UI, dados e projeções"],["Recursos","Contas, categorias, projeção e alertas"]],
          en:[["Role","Creator"],["Type","Own product"],["Focus","UX/UI, data and forecasts"],["Features","Accounts, categories, forecast and alerts"]]}
 };
 const META = {"alumya":{pt:"Identidade visual",en:"Visual identity"},"ruptura":{pt:"Jogo educativo",en:"Educational game"},"4play":{pt:"Marca digital · Brasil e Costa Rica",en:"Digital brand · Brazil and Costa Rica"},"pagol":{pt:"Marca digital · Brasil",en:"Digital brand · Brazil"},"auto":{pt:"Ferramenta própria",en:"Own tool"},"fin":{pt:"Produto próprio",en:"Own product"}};
-PROJECTS.forEach(p=>{ p.facts=FACTS[p.id]; p.meta=META[p.id]; });
+FACTS.kayo={pt:[["Papel","Motion designer"],["Tipo","Peça de motion design"],["Personagem","KAY/O · VALORANT"],["Onde ver","Behance, em vídeo"]],
+            en:[["Role","Motion designer"],["Type","Motion design piece"],["Character","KAY/O · VALORANT"],["Where to watch","Behance, in video"]]};
+META.kayo={pt:"Motion design",en:"Motion design"};
+const LINKS = {
+  "alumya":[{url:"https://www.behance.net/gallery/257910451/Alumya-Identidade-Visual-para-Automacao-com-IA",label:{pt:"Ver no Behance",en:"View on Behance"}},
+            {url:"https://www.alumya.com.br/",label:{pt:"Visitar o site",en:"Visit the site"}}],
+  "4play":[{url:"https://www.behance.net/gallery/257268103/4Play-Direcao-de-Arte-e-Gamificacao-para-iGaming",label:{pt:"Ver no Behance",en:"View on Behance"}}],
+  "ruptura":[{url:"https://pontoderuptura.pages.dev/",label:{pt:"Jogar agora",en:"Play now"}}],
+  "kayo":[{url:"https://www.behance.net/gallery/198572309/MOTION-com-personagem-KAIO-de-VALORANT",label:{pt:"Ver motion no Behance",en:"View motion on Behance"}},
+          {url:"https://www.behance.net/cttismael",label:{pt:"Mais motions no Behance",en:"More motion work on Behance"}}]
+};
+const EXT_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+const linksHTML = p => (p.links&&p.links.length) ? `<div class="dlg-links">${p.links.map((l,i)=>`<a class="btn ${i===0?"btn-primary":"btn-ghost"} btn-sm" href="${l.url}" target="_blank" rel="noopener noreferrer"><span>${l.label[lang]}</span>${EXT_SVG}</a>`).join("")}</div>` : "";
+PROJECTS.forEach(p=>{ p.facts=FACTS[p.id]; p.meta=META[p.id]; p.links=LINKS[p.id]||[]; });
 
 /* ---------- capas geradas (substituídas quando houver "image") ---------- */
 function coverSVG(id){
@@ -962,8 +1013,8 @@ function render(){
   $("#stats").innerHTML = t.stats.map(([,n,l])=>`<li><strong>${n}</strong><span>${l}</span></li>`).join("");
   justUnlocked=-1; renderStory();
   renderServices();
-  $("#thumbs").innerHTML = PROJECTS.map((p,i)=>`<button class="thumb" type="button" data-i="${i}" aria-current="${i===current}" style="--tp:${p.color}"><div class="cover">${coverHTML(p,true)}</div><div class="t"><strong>${nameOf(p)}</strong><span>${p.meta[lang]}</span></div></button>`).join("");
-  $("#thumbs").querySelectorAll(".thumb").forEach(b=>b.onclick=()=>show(+b.dataset.i,true));
+  $("#thumbs").innerHTML = PROJECTS.map((p,i)=>`<button class="thumb" type="button" data-i="${i}" aria-current="${i===current}" style="--tp:${p.color}"><div class="cover">${coverHTML(p,true)}</div><div class="t"><strong>${nameOf(p)}</strong><span>${p.meta[lang]}</span></div></button>`).join("") + `<a class="thumb thumb-more" href="https://www.behance.net/cttismael" target="_blank" rel="noopener noreferrer" aria-label="${t["aria.moreBehance"]}"><div class="cover"><span class="more-in"><i>${EXT_SVG}</i>${t["proj.more"]}</span></div><div class="t"><strong>${t["proj.moreTitle"]}</strong><span>${t["proj.moreSub"]}</span></div></a>`;
+  $("#thumbs").querySelectorAll(".thumb[data-i]").forEach(b=>b.onclick=()=>show(+b.dataset.i,true));
   show(current,false);
 }
 function show(i,scroll){
@@ -976,7 +1027,11 @@ function show(i,scroll){
   $("#fDesc").textContent = p.desc[lang];
   $("#fFacts").innerHTML = factsHTML(p);
   $("#count").textContent = `${String(current+1).padStart(2,"0")} / ${String(PROJECTS.length).padStart(2,"0")}`;
-  document.querySelectorAll(".thumb").forEach(b=>b.setAttribute("aria-current", +b.dataset.i===current));
+  document.querySelectorAll(".thumb[data-i]").forEach(b=>b.setAttribute("aria-current", +b.dataset.i===current));
+  const L=p.links||[], ext=$("#fExt"), ext2=$("#fExt2"), oc=$("#openCase");
+  if(L[0]){ ext.hidden=false; ext.href=L[0].url; ext.querySelector("span").textContent=L[0].label[lang]; } else { ext.hidden=true; }
+  oc.hidden=!!p.simple;
+  if(p.simple && L[1]){ ext2.hidden=false; ext2.href=L[1].url; ext2.querySelector("span").textContent=L[1].label[lang]; } else { ext2.hidden=true; }
   if(window.__parallax) requestAnimationFrame(window.__parallax);
   if(scroll) $(".featured").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"center"});
 }
@@ -1052,7 +1107,7 @@ $("#openCase").onclick=()=>{
     <dl class="facts">${factsHTML(p)}</dl>
     <h4>${t["case.context"]}</h4><p>${p.ctx[lang]}</p>
     <h4>${t["case.did"]}</h4><ul>${p.did[lang].map(d=>`<li>${d}</li>`).join("")}</ul>
-    <h4>${t["case.result"]}</h4>${Array.isArray(p.res[lang]) ? `<ul>${p.res[lang].map(r=>`<li>${r}</li>`).join("")}</ul>` : `<p>${p.res[lang]}</p>`}`;
+    <h4>${t["case.result"]}</h4>${Array.isArray(p.res[lang]) ? `<ul>${p.res[lang].map(r=>`<li>${r}</li>`).join("")}</ul>` : `<p>${p.res[lang]}</p>`}${linksHTML(p)}`;
   if(dlg.showModal) dlg.showModal(); else dlg.setAttribute("open","");
 };
 $("#closeCase").onclick=()=>dlg.close();
